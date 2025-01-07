@@ -28,10 +28,25 @@ const ammount = 30;
 // const ammount  = 40;   invalid method because as we learn before that we could not re-asign the 'const' values, mean if we decalre a "ammount" variable and again if we declare a variable with same name then we recived a reference error
 // -------------------------------------------------------------
 // Scope in javascript = "Scope in javascript refers the visibility of variables and fuctions within in a programme" Types of scope -> 1) Global Scope, 2) Block Scope, 3) Funstional Scope //
-//  Global Scope is the outermost scope of javascript programme. Variables and functions declared in a global scope are visible anywhare in the programme. ('var' is a global scope  valiable)
-
+//  Global Scope is the outermost scope of javascript programme. Variables and functions declared in a global scope are visible anywhare in the programme. ('var' is the example of a global scope)
 var brand = "Tayota"
 function brandInquerry(){
 console.log(brand)
 }
+brandInquerry();
 console.log(brand)
+//Function scope is created when a function is declared.Variables and function declared in a function scope are only visible inside that function
+function luxuaryCars(){
+var marceedes = 2025;
+console.log(marceedes);
+}
+luxuaryCars()
+
+// Blocked Scope -> variables and functions declared in a block scope are only visible inside that scope. Block scope is a group of statements that are enclosed inside curly blaces '{}'
+ function blockScope(){
+    if(bs>vs){
+        let bs = "Blocked Scope";
+        console.log(bs);
+ }
+ }
+ blockScope();
