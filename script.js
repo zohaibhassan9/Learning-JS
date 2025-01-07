@@ -50,3 +50,9 @@ luxuaryCars()
  }
  }
  blockScope();
+// -------------------------------------------------------------------
+// Data Types in JavScript ->Datatypes are of two types! 1 is 'Premitive' >Number, Boolian, String, Null, Undefined, BigInt, Symbol  and another is 'Non-Primitive or Reference Type' > Oblects, Arrays and functions. 
+ 
+// Functions is the type of 'objects' tha is used to exeute code.
+// Objects are used to store different type of data.
+// Arrays are used to store different values.
