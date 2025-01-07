@@ -34,4 +34,4 @@ var brand = "Tayota"
 function brandInquerry(){
 console.log(brand)
 }
-HTMLFormControlsCollection.log(brand)
+console.log(brand)
