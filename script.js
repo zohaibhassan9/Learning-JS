@@ -30,7 +30,7 @@ const ammount = 30;
 // Scope in javascript = "Scope in javascript refers the visibility of variables and fuctions within in a programme" Types of scope -> 1) Global Scope, 2) Block Scope, 3) Funstional Scope //
 //  Global Scope is the outermost scope of javascript programme. Variables and functions declared in a global scope are visible anywhare in the programme. ('var' is a global scope  valiable)
 
-const brand = "Tayota"
+var brand = "Tayota"
 function brandInquerry(){
 console.log(brand)
 }
