@@ -55,4 +55,7 @@ luxuaryCars()
  
 // Functions is the type of 'objects' tha is used to exeute code.
 // Objects are used to store different type of data.
-// Arrays are used to store different values.
+// Arrays are used to store different values.  
+// ---------------------------------------------------------------------
+// Oprators in JS
+// Oprators in javascript are symbols that is used to perform oprations on oprends. Oprands are values and vaiables.
