@@ -162,9 +162,38 @@ let something = "something";
 
 //  2)Loops
 // Loops in programing are used to reapet a block of code, mean if we repaet a message more than 100 times then we used loops
+// for loop
+let i = 10;
+for (let i = 1; i <= 10; i++){
+console.log("Great Stack")
+}
+// for arrays
+let cooding = [JS, PY, C++]
+for (let i =0; i <= cooding.length; i++){
+console.log(cooding[i]);
+}
+// loop inside a loop
+let j = 10;
+for (let j = 1; j <= 10; j++){
+console.log("Great Stack")
 
+for(let j= 0; j<=5; j++){
+console.log("Loop inside a loop" + j);
+}}
 
+//While loop 
 
+let k = 0;
+while(k <= 5){
+    console.log("while loop " + k)
+    k++;
+}
 
+// Do While Loop
+let  n = 1
+do{
+console.log("do while loop " + )
+
+}while(<=10)
 //  3)Try and Catch
 
