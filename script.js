@@ -267,11 +267,16 @@ console.log("Hi, everyone");
 }
 )();
 
+// Recursive Function in JavaScript
+// A recursive function in javascript is such a function that calls itself, examples are given below
 
-
-
-
-
+function countDown(num){
+console.log(num)
+num--;
+if(num>=0){
+countDown(num) 
+}}
+countDown(10);
 
 
 
