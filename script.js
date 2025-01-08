@@ -104,6 +104,10 @@ else{
     console.log("Sorry! You're not able to apply for a virtual driving license card");
     
 }
+// Switch Case -> Part of Condiitional statements (Switch statements in javascript are used to execute a block of code based on the value of an expression )
+
+
+
 
 
 
