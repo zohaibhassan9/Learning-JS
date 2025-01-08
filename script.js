@@ -68,11 +68,11 @@ luxuaryCars()
 //below example
 // i)
 if(true){
-console.log('Hello, Conditiobal Staement');
+console.log("Hello, Conditiobal Statement");
 }
 // vice versa, in this condition nothing is printed in console tab
 if(false){
-console.log('Hello, Conditiobal Staement');
+console.log("Hello, Conditional Statement");
 } 
 // ii)
 let country = "Pakistan"
@@ -90,6 +90,8 @@ let ht = 30;
 if(ht>25){
 console.log('You are not able to jump')
 }
+
+// ---------------------------------------------
 // Now we will discuss about 'If Else' Condition, because it is also a type of conditional statements
 
 let counrY = "Pakistan"
@@ -104,6 +106,8 @@ else{
     console.log("Sorry! You're not able to apply for a virtual driving license card");
     
 }
+
+// --------------------------------------------
 // Switch Case -> Part of Condiitional statements (Switch Case in javascript are used to execute a block of code based on the value of an expression )
 let value = "Zohaib"
 switch (typeof value) {
@@ -194,9 +198,26 @@ do{
 console.log("do while loop " + n)
 n++;
 }while(n<=10)
+
 // ----------------------------------------------
 
+// Fuctions
+function greet(fname, lname){
+console.log("Hello, " + fname + " " + lname )
+}
+greet("hassan", "ali");
 
+// Return function
+function added(x, y){
+return x + y;
+}
+// now we will add the the refernce of 'added' into a variable
+let calculation = added(10, 90);
+console.log(calculation);
+
+// ----------------------------------------------
+
+// Default Parameters
 
 
 
