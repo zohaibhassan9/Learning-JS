@@ -250,8 +250,22 @@ return x+y;
 }
 console.log(sum(10, 20));
 
+// a simple anonymouse function is given below
+function(){
+console.log("Hi, everyone");
 
+// Important question-> how to execute code inside a simple anonymouse function, answer is that we use two parathesis (). Fisrst usded to wrap all the code inside it , like shown below:
+(
+function(){ 
+console.log("Hi, everyone");  
+)
+// and second one is used to execute the code and we use it in this case like shown above:
 
+(
+function(){ 
+console.log("Hi, everyone");  
+}
+)();
 
 
 
