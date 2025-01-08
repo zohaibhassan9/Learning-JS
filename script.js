@@ -246,9 +246,8 @@ fun2(20, 30, fun1)
 // Anonymouse function 
 // Anonymouse function is a function in JS that we have declared without a name
 let sum = function(x, y){
-    return x+y;
+return x+y;
 }
-
 console.log(sum(10, 20));
 
 
