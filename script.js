@@ -157,8 +157,7 @@ console.log("The day name is " + dayName);
 let something = "something";
 (condition)? Expression1 : Expression2;
 
-
-
+// -----------------------------------------------------
 
 //  2)Loops
 // Loops in programing are used to reapet a block of code, mean if we repaet a message more than 100 times then we used loops
@@ -195,5 +194,11 @@ do{
 console.log("do while loop " + n)
 n++;
 }while(n<=10)
+// ----------------------------------------------
+
+
+
+
+
 //  3)Try and Catch
 
