@@ -104,18 +104,64 @@ else{
     console.log("Sorry! You're not able to apply for a virtual driving license card");
     
 }
-// Switch Case -> Part of Condiitional statements (Switch statements in javascript are used to execute a block of code based on the value of an expression )
+// Switch Case -> Part of Condiitional statements (Switch Case in javascript are used to execute a block of code based on the value of an expression )
+let value = "Zohaib"
+switch (typeof value) {
+case String:
+console.log("String")
+break;
+case Number:
+console.log("Number")
+break;
+case Boolian:
+console.log("Boolian")
+break;
+case Undefined:
+console.log("Undefined")
+break;
+default:
+console.log("Other");
+break;
+}
+// another example that show case the default day name
+let dayName = 2;
+switch(dayName){
 
-
-
-
+case 1:
+dayName = "Sunday"
+break;
+case 2:
+dayName = "Monday"
+break;
+case 3:
+dayName = "Thuesday"
+break;
+case 4:
+dayName = "Wednesnday"
+break;
+case 5:
+dayName = "Thursday"
+break;
+case 6:
+dayName= "Friday"
+break;
+case 7:
+dayName = "Saturday"
+break;
+default:
+    dayName = "Other"
+    break;
+}
+console.log("The day name is " + dayName);
+// Terinary Oprator , it is easy and works as a if and else condition type. Its structire is given below
+let something = "something";
+(condition)? Expression1 : Expression2;
 
 
 
 
 //  2)Loops
- 
-
+// Loops in programing are used to reapet a block of code, mean if we repaet a message more than 100 times then we used loops
 
 
 
