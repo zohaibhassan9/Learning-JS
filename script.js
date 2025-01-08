@@ -59,3 +59,45 @@ luxuaryCars()
 // ---------------------------------------------------------------------
 // Oprators in JS
 // Oprators in javascript are symbols that is used to perform oprations on oprends. Oprands are values and vaiables.
+// ----------------------------------------------------------------------
+// Control Flow statements in JavaScript
+// Control flow statements are used to control the flow of code execution in JavaScript Programme. They are used to make decitions, execute loops & handle errors. 
+// 3 type of control flow statements in javascript
+
+//  1) Conditional Staement
+//below example
+// i)
+if(true){
+console.log('Hello, Conditiobal Staement');
+}
+// vice versa, in this condition nothing is printed in console tab
+if(false){
+console.log('Hello, Conditiobal Staement');
+} 
+// ii)
+let country = "Pakistan"
+let minimumAge = 18;
+if(minimumAge >= 18 && country == "Pakistan"){
+console.log('You are able to apply for virtual driving license card')
+}
+// iii)
+let height = 30;
+if(height>25){
+console.log('You are able to jump')
+}
+// and if 
+let ht = 30;
+if(ht>25){
+console.log('You are not able to jump')
+}
+// Now we will discuss about 'If Else' Condition, because it is also a type of conditional statements
+// 03077003231 Shabeer shb
+//  2)Loops
+ 
+
+
+
+
+
+//  3)Try and Catch
+
