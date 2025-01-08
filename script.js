@@ -91,7 +91,24 @@ if(ht>25){
 console.log('You are not able to jump')
 }
 // Now we will discuss about 'If Else' Condition, because it is also a type of conditional statements
-// 03077003231 Shabeer shb
+
+let counrY = "Pakistan"
+let miniumAge = 18;
+if(minimumAge >= 18 && country == "Pakistan"){
+console.log('You are able to apply for virtual driving license card')
+}
+else if(minimumAge >= 16 && country == "Pakistan"){
+    console.log("Sorry! You're not able to apply for a virtual driving license card")
+}
+else{
+    console.log("You are Teenager");
+    
+}
+
+
+
+
+
 //  2)Loops
  
 
