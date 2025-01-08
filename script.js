@@ -193,7 +193,7 @@ while(k <= 5){
 let  n = 1
 do{
 console.log("do while loop " + n)
-
+n++;
 }while(n<=10)
 //  3)Try and Catch
 
