@@ -192,8 +192,8 @@ while(k <= 5){
 // Do While Loop
 let  n = 1
 do{
-console.log("do while loop " + )
+console.log("do while loop " + n)
 
-}while(<=10)
+}while(n<=10)
 //  3)Try and Catch
 
