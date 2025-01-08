@@ -98,10 +98,10 @@ if(minimumAge >= 18 && country == "Pakistan"){
 console.log('You are able to apply for virtual driving license card')
 }
 else if(minimumAge >= 16 && country == "Pakistan"){
-    console.log("Sorry! You're not able to apply for a virtual driving license card")
+    console.log("You are Teenager")
 }
 else{
-    console.log("You are Teenager");
+    console.log("Sorry! You're not able to apply for a virtual driving license card");
     
 }
 
