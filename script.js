@@ -227,10 +227,39 @@ let twofunctions = abc(4);
 console.log(twofunctions); 
 
 console.log(twofunctions(5));
-
 // ----------------------------------------------
 
-// Default Parameters
+
+//callback function
+// A callback function is a function passed as an argument to another function, which is then executed after the completion of a specific task or event
+function fun1(results){
+    console.log(results);
+}
+
+function fun2(num1, num2, myCallback) {
+  let sum =  num1 + num2;
+myCallback(sum)
+}
+
+fun2(20, 30, fun1)
+// --------------------------------------------
+// Anonymouse function 
+// Anonymouse function is a function in JS that we have declared without a name
+let sum = function(x, y){
+    return x+y;
+}
+
+console.log(sum(10, 20));
+
+
+
+
+
+
+
+
+
+
 
 
 
