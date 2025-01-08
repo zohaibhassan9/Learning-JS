@@ -43,12 +43,12 @@ console.log(marceedes);
 luxuaryCars()
 
 // Blocked Scope -> variables and functions declared in a block scope are only visible inside that scope. Block scope is a group of statements that are enclosed inside curly blaces '{}'
- function blockScope(){
-    if(bs>vs){
-        let bs = "Blocked Scope";
-        console.log(bs);
- }
- }
+function blockScope(){
+if(bs>vs){
+let bs = "Blocked Scope";
+console.log(bs);
+}
+}
  blockScope();
 // -------------------------------------------------------------------
 // Data Types in JavScript ->Datatypes are of two types! 1 is 'Premitive' >Number, Boolian, String, Null, Undefined, BigInt, Symbol  and another is 'Non-Primitive or Reference Type' > Oblects, Arrays and functions. 
@@ -93,7 +93,6 @@ console.log('You are not able to jump')
 
 // ---------------------------------------------
 // Now we will discuss about 'If Else' Condition, because it is also a type of conditional statements
-
 let counrY = "Pakistan"
 let miniumAge = 18;
 if(minimumAge >= 18 && country == "Pakistan"){
@@ -106,7 +105,6 @@ else{
     console.log("Sorry! You're not able to apply for a virtual driving license card");
     
 }
-
 // --------------------------------------------
 // Switch Case -> Part of Condiitional statements (Switch Case in javascript are used to execute a block of code based on the value of an expression )
 let value = "Zohaib"
@@ -162,7 +160,6 @@ let something = "something";
 (condition)? Expression1 : Expression2;
 
 // -----------------------------------------------------
-
 //  2)Loops
 // Loops in programing are used to reapet a block of code, mean if we repaet a message more than 100 times then we used loops
 // for loop
@@ -200,7 +197,6 @@ n++;
 }while(n<=10)
 
 // ----------------------------------------------
-
 // Fuctions
 function greet(fname, lname){
 console.log("Hello, " + fname + " " + lname )
@@ -228,8 +224,6 @@ console.log(twofunctions);
 
 console.log(twofunctions(5));
 // ----------------------------------------------
-
-
 //callback function
 // A callback function is a function passed as an argument to another function, which is then executed after the completion of a specific task or event
 function fun1(results){
@@ -266,7 +260,7 @@ function(){
 console.log("Hi, everyone");  
 }
 )();
-
+// -----------------------------------------------
 // Recursive Function in JavaScript
 // A recursive function in javascript is such a function that calls itself, examples are given below
 
@@ -277,9 +271,69 @@ if(num>=0){
 countDown(num) 
 }}
 countDown(10);
+// ------------------------------------------------
+// JavaScript Constructor Function
+// A Constructor Function in JavaScript is used to create objects
+
+function Person(name, age) {
+    this.name = name; 
+    this.age = age; 
+}
+
+const person1 = new Person("Alice", 30); 
+const person2 = new Person("Bob", 25);  
+
+console.log(person1);
+console.log(person2);
+// -------------------------------------------------
+// Prototype in JavaScript: Every object have an abilty to share its data to other objects and the process used for this data sharing is called prototype. Every object has hidden prototypes that enable a connection between the varius kind of objects for data sharing. Prototype are works like blueprint for other objects. 
+
+function Persn(name){
+this.name = name;
+}
+Persn.prototype.learnPrototype = function(){
+return `Hello, my name is ${this.name} `;
+}
+const persn1 = new Persn("zohaib")
+const persn2 = new Person("Bob");
+
+console.log(persn1.learnPrototype())
+console.log(persn2.learnPrototype())
+// if we want to add values and properties in functions using prototype function method
+
+function Person(name, age) {
+    this.name = name; 
+    this.age = age; 
+}
+Person.prototype.country = "Pakistan";
+const pers0n1 = new Person("zohaib", 18);
+const pers0n2 = new Person("Hassan", 22);
+console.log(person1)
+// result name: "Zohaib", age = 18;   and if we want to get the value of newly inserted prototype then we should call is specifically like pers0n1.country and pers0n2.country.
+console.log(person1.country); //result = Pakistan 
+// -----------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 //  3)Try and Catch
-
