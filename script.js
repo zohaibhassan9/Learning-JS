@@ -215,6 +215,20 @@ return x + y;
 let calculation = added(10, 90);
 console.log(calculation);
 
+// 
+// function inside a function 
+function abc(x){
+function bca(y){
+    return x * y;
+}
+return bca()
+}
+
+let twofunctions = abc(4);
+console.log(twofunctions); 
+
+console.log(twofunctions(5));
+
 // ----------------------------------------------
 
 // Default Parameters
