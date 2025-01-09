@@ -469,7 +469,25 @@ class Student extends Person{
 }
 const student1 = new Student("Peter")
 student1.greet(); // result will be Hello, Peter.  = Student class take its pairents class properties because of Inheritance.
-
+// -------- JavaScript Super Method: This Super Method is used to call the constructor and method of their parents classes.
+class Person{
+constructor(name){
+this.name = name;
+}
+greet(){
+console.log("Hello", this.name); 
+}}
+class Student extends Person{
+    constructor(name, breed){
+        super(name);
+        this.breed = breed;
+    }
+}
+const student1 = new Student("Peter", "abc")
+console.log(student1.name); // result = Peter
+console.log(student1.breed); // result = abc
+// ---------------------------------------------------------------
+// Method or property overriding
 
 
 
