@@ -636,4 +636,5 @@ const person1 = new Person("Zohaib", "Hassan")
 person1.display(); //  Finally get the execution
 
 // -------------------------------------------------------------
-// 
+// DOM: Document Objective Model is an API for manipulating HTML document.
+// DOM provdes functions that allosws us to add, remove and modify the parts of the document effectively.
