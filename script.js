@@ -614,7 +614,7 @@ const person1 = new Person("Zohaib", "Hassan")
 person1.display(); //  Finally get the execution
 
 // ---------------------------------------------------------------------
-// Private Static Method: if we use the above example then the only changes we need t showcase that it is Private Static Method, then we use keyword 'Static' with private emthod
+// Private Static Method: if we use the above example then only changes we need to showcase that it is Private Static Method, then we use keyword 'Static' with private method
 
 
 class Person{
