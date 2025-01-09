@@ -10,7 +10,8 @@ var a = 10;
 var a = "Hello";
 var a = {};
 var a = []; 
-// --------------------------------------------------------
+// ---------------------------------------------------------------------
+// ---------------------------------------------------------------------
 // Let keywords is used to decare a block-scopped variable, mean it only visible to within the  block in which it is decarled.
 let age = 20;
 console.log(age);
@@ -26,7 +27,8 @@ console.log(person);
 // Const> conctant can be used to declare a variables and we cannot re-assign their values (in below exaple)
 const ammount = 30;    
 // const ammount  = 40;   invalid method because as we learn before that we could not re-asign the 'const' values, mean if we decalre a "ammount" variable and again if we declare a variable with same name then we recived a reference error
-// -------------------------------------------------------------
+// ---------------------------------------------------------------------
+// ---------------------------------------------------------------------
 // Scope in javascript = "Scope in javascript refers the visibility of variables and fuctions within in a programme" Types of scope -> 1) Global Scope, 2) Block Scope, 3) Funstional Scope //
 //  Global Scope is the outermost scope of javascript programme. Variables and functions declared in a global scope are visible anywhare in the programme. ('var' is the example of a global scope)
 var brand = "Tayota"
@@ -50,12 +52,14 @@ console.log(bs);
 }
 }
  blockScope();
-// -------------------------------------------------------------------
+// ---------------------------------------------------------------------
+// ---------------------------------------------------------------------
 // Data Types in JavScript ->Datatypes are of two types! 1 is 'Premitive' >Number, Boolian, String, Null, Undefined, BigInt, Symbol  and another is 'Non-Primitive or Reference Type' > Oblects, Arrays and functions. 
  
 // Functions is the type of 'objects' tha is used to exeute code.
 // Objects are used to store different type of data.
 // Arrays are used to store different values.  
+// ---------------------------------------------------------------------
 // ---------------------------------------------------------------------
 // Oprators in JS
 // Oprators in javascript are symbols that is used to perform oprations on oprends. Oprands are values and vaiables.
@@ -91,7 +95,8 @@ if(ht>25){
 console.log('You are not able to jump')
 }
 
-// ---------------------------------------------
+// ---------------------------------------------------------------------
+// ---------------------------------------------------------------------
 // Now we will discuss about 'If Else' Condition, because it is also a type of conditional statements
 let counrY = "Pakistan"
 let miniumAge = 18;
@@ -105,7 +110,8 @@ else{
     console.log("Sorry! You're not able to apply for a virtual driving license card");
     
 }
-// --------------------------------------------
+// ---------------------------------------------------------------------
+// ---------------------------------------------------------------------
 // Switch Case -> Part of Condiitional statements (Switch Case in javascript are used to execute a block of code based on the value of an expression )
 let value = "Zohaib"
 switch (typeof value) {
@@ -196,7 +202,8 @@ console.log("do while loop " + n)
 n++;
 }while(n<=10)
 
-// ----------------------------------------------
+// ---------------------------------------------------------------------
+// ---------------------------------------------------------------------
 // Fuctions
 function greet(fname, lname){
 console.log("Hello, " + fname + " " + lname )
@@ -223,7 +230,8 @@ let twofunctions = abc(4);
 console.log(twofunctions); 
 
 console.log(twofunctions(5));
-// ----------------------------------------------
+// ---------------------------------------------------------------------
+// ---------------------------------------------------------------------
 //callback function
 // A callback function is a function passed as an argument to another function, which is then executed after the completion of a specific task or event
 function fun1(results){
@@ -236,7 +244,8 @@ myCallback(sum)
 }
 
 fun2(20, 30, fun1)
-// --------------------------------------------
+// ---------------------------------------------------------------------
+// ---------------------------------------------------------------------
 // Anonymouse function 
 // Anonymouse function is a function in JS that we have declared without a name
 let sum = function(x, y){
@@ -260,7 +269,8 @@ function(){
 console.log("Hi, everyone");  
 }
 )();
-// -----------------------------------------------
+// ---------------------------------------------------------------------
+// ---------------------------------------------------------------------
 // Recursive Function in JavaScript
 // A recursive function in javascript is such a function that calls itself, examples are given below
 
@@ -271,7 +281,7 @@ if(num>=0){
 countDown(num) 
 }}
 countDown(10);
-// ------------------------------------------------
+// ---------------------------------------------------------------------
 // JavaScript Constructor Function
 // A Constructor Function in JavaScript is used to create objects
 
@@ -285,7 +295,7 @@ const person2 = new Person("Bob", 25);
 
 console.log(person1);
 console.log(person2);
-// -------------------------------------------------
+// ---------------------------------------------------------------------
 // Prototype in JavaScript: Every object have an abilty to share its data to other objects and the process used for this data sharing is called prototype. Every object has hidden prototypes that enable a connection between the varius kind of objects for data sharing. Prototype are works like blueprint for other objects. 
 
 function Persn(name){
@@ -306,29 +316,106 @@ function Person(name, age) {
     this.age = age; 
 }
 Person.prototype.country = "Pakistan";
+Person.prototype.gender = "Male";
+
 const pers0n1 = new Person("zohaib", 18);
 const pers0n2 = new Person("Hassan", 22);
-console.log(person1)
+console.log(person1);
+console.log(pers0n2);
+
 // result name: "Zohaib", age = 18;   and if we want to get the value of newly inserted prototype then we should call is specifically like pers0n1.country and pers0n2.country.
-console.log(person1.country); //result = Pakistan 
-// -----------------------------------------------------
+console.log(person1.country); //result = Pakistan
+console.log(person1.gender); //result = Male  
+// -------------------
+
+//This one is also a part for the same above for better understanding
+    function Persn(name, age){
+            this.name = name;
+            this.age = age;
+            }
+            Persn.prototype.tech = function(){
+            return `Hello, my name is: ${this.name}  and my age is: ${this.age} `;
+            }
+            const person01 = new Persn("zohaib", 20)
+            const person02 = new Persn("hassan", 22)
+
+            // const person02 = new Person(20);
+
+    console.log(persn1.tech())
+    console.log(persn2.tech())
+
+// ---------------------------------------------------------------------
+// Object Destructing in JavaScript: Object Destructing in JavaScript is a feature that allow us to extract the properties of objects into variables. This can bes useful to asigining the properties of objects to variables in a single statement. 
+
+const person = {
+    fName: "Elon",
+    lName: "Musk"
+}
+
+let {fName, lName} = person;
+console.log(fName);  // result = Elon
+
+// if we want to add proerties, like shown below "age"
+
+let {fName, lName, age} = person; 
+console.log(age);  // result = Undefined
+// correct method to asign value into age variable,
+let {fName, lName, age = 20} = person; 
+
+console.log(age);  // result = 20
+
+// ---------------------------------------------------------------------
+// JavaScript Class: Classes are introduced in ES6 version of JavaScript. Classes are templates for crating objects.
+
+class Person{
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
+}
+const person1 = new Person('zohaib', 18)
+const person2 = new Person('hassan', 20)
+console.log(person1);
+console.log(person2);
+// -------------------------- Methods In Classes
+// How to add Methods in Classes
+class Person{
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
+    // add methods or function
+    greet(){
+        return "Hello ", this.name;
+    }
+}
+
+const person1 = new Person('zohaib', 18)
+const person2 = new Person('hassan', 20)
+console.log(person1.greet());  // result will show the value of greet , mean "Hello, zohaib"
+
+// ------------------- Add more methods in the classes
 
 
 
+class Person{
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
+    // add methods or function
+    greet(){
+        return "Hello ", this.name;
+    }
+    reversingName(changeName){
+this.name  = changeName;
+    }
+}
 
+const person1 = new Person('zohaib', 18)
 
-
-
-
-
-
-
-
-
-
-
-
-
+person1.reversingName("Biba ni")
+console.log(person1); //  This will show the result "Biba ni"
 
 
 
