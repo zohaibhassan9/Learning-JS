@@ -577,3 +577,38 @@ class Person {
   }
   
   // ----------------------------------------------------------------------------
+// JavScript Private Method
+class Person{
+    constructor(fName, lName){
+        this.fName = fName;
+        this.lName = lName;
+    }
+
+#fullName(){
+    return this.fName +" "+ this.lName; 
+}
+}
+
+const person1 = new Person("Zohaib", "Hassan")
+console.log(person1.fname); // we get an error, because we are studies about private methods(that default use '#' this shows that thsi method is private) in JS.
+
+// so the solution of thei private method and resolve the error then we need another method and we passed or call the private method inside it using 'this' Term.
+
+class Person{
+    constructor(fName, lName){
+        this.fName = fName;
+        this.lName = lName;
+    }
+
+#fullName(){
+    return this.fName +" "+ this.lName; 
+}
+
+display(){
+console.log(this.#fullName());
+
+}
+}
+
+const person1 = new Person("Zohaib", "Hassan")
+console.log(person1.fname);
