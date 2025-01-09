@@ -458,18 +458,15 @@ console.log(person1); // Result => Hey! Abdullah
 // JavaScript Class Inheritance: JavaScript Class Inheritance allows us to create a new class based on an existing class.
 // Class inheritance in JavaScript is a mechanism that allows one class (called the child class) to inherit properties and methods from another class (called the parent class)
 class Person{
-    constructor(name){
-        this.name = name;
-    }
+constructor(name){
+this.name = name;
+}
 greet(){
-  console.log("Hello", this.name); 
+console.log("Hello", this.name); 
 }
 }
-
 class Student extends Person{
-
 }
-
 const student1 = new Student("Peter")
 student1.greet(); // result will be Hello, Peter.  = Student class take its pairents class properties because of Inheritance.
 
