@@ -254,7 +254,7 @@ return x+y;
 console.log(sum(10, 20));
 
 // a simple anonymouse function is given below
-function(){
+ function(){
 console.log("Hi, everyone");
 
 // Important question-> how to execute code inside a simple anonymouse function, answer is that we use two parathesis (). Fisrst usded to wrap all the code inside it , like shown below:
@@ -433,8 +433,35 @@ class Person{
 }
 
 const person1 = new Person('zohaib', 18)
-
 console.log(person1.greet);   //we apply the get method above with greet method, now we can call greet without parathesis '()'
+// Setter Method
+
+class Person{
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
+get greet(){
+    return "Hello Setter ", this.name
+}
+set PetsonName(){
+    return "Hey! ", this.name;
+}
+
+}
+
+person1 = Person("Ali", 20)
+person1.PetsonName("Abdullah")
+console.log(person1); // Result => Hey! Abdullah
+
+// -----------------------------------------------------------------
+// JavaScript Class Inheritance
+
+
+
+
+
+
 
 
 //  3)Try and Catch
