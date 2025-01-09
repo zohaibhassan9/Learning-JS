@@ -415,7 +415,7 @@ this.name  = changeName;
 const person1 = new Person('zohaib', 18)
 
 person1.reversingName("Biba ni")
-console.log(person1); //  This will show the result "Biba ni"
+console.log(person1);  //  This will show the result "Biba ni"
 
 
 
