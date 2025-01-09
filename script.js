@@ -377,7 +377,7 @@ const person1 = new Person('zohaib', 18)
 const person2 = new Person('hassan', 20)
 console.log(person1);
 console.log(person2);
-// -------------------------- Methods In Classes
+// --------------- Methods In Classes
 // How to add Methods in Classes
 class Person{
     constructor(name, age){
@@ -394,7 +394,7 @@ const person1 = new Person('zohaib', 18)
 const person2 = new Person('hassan', 20)
 console.log(person1.greet());  // result will show the value of greet , mean "Hello, zohaib"
 
-// ------------------- Add more methods in the classes
+// ---------------- Add more methods in the classes
 
 
 
@@ -417,10 +417,24 @@ const person1 = new Person('zohaib', 18)
 person1.reversingName("Biba ni")
 console.log(person1);  //  This will show the result "Biba ni"
 
+// ---------------------------------------------------------------------
+// Getters and setters Mothods in Javascript: Getters and Setters are specific methods in javascript that allow us to control how properties are modified and accessed.
 
+class Person{
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
+    // "Get" methods appling
+    get greet(){
+        return "Hello ", this.name;
+    }
 
+}
 
+const person1 = new Person('zohaib', 18)
 
+console.log(person1.greet);   //we apply the get method above with greet method, now we can call greet without parathesis '()'
 
 
 //  3)Try and Catch
