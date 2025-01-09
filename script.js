@@ -600,15 +600,40 @@ class Person{
         this.lName = lName;
     }
 
-#fullName(){
-    return this.fName +" "+ this.lName; 
+#fullName(x){
+    return x.fName +" "+ x.lName; 
 }
 
 display(){
-console.log(this.#fullName());
+console.log(this.#fullName(this));
 
 }
 }
 
 const person1 = new Person("Zohaib", "Hassan")
-console.log(person1.fname);
+person1.display(); //  Finally get the execution
+
+// ---------------------------------------------------------------------
+// Private Static Method: if we use the above example then the only changes we need t showcase that it is Private Static Method, then we use keyword 'Static' with private emthod
+
+
+class Person{
+    constructor(fName, lName){
+        this.fName = fName;
+        this.lName = lName;
+    }
+
+static #fullName(x){
+    return x.fName +" "+ x.lName; // keep in mind, if we use private method then we must should add an augument to this method
+}
+
+display() {
+    console.log(Person.#fullName(this)); // Call the private static method with the current instance
+}
+}
+
+const person1 = new Person("Zohaib", "Hassan")
+person1.display(); //  Finally get the execution
+
+// -------------------------------------------------------------
+// 
