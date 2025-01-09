@@ -487,9 +487,93 @@ const student1 = new Student("Peter", "abc")
 console.log(student1.name); // result = Peter
 console.log(student1.breed); // result = abc
 // ---------------------------------------------------------------
-// Method or property overriding
+// Method or property overriding: If the parent class and child class has the same method or property name. In this case, when we will call the method or property of an Object of the child class, It will override the method or property of the parent class. This is known as method overriding or shadowing method.
+
+//----------------- Method overiding:
+class Person {
+    constructor(name) {
+        this.name = name;
+    }
+    greet() {
+        console.log("Hello Person", this.name);
+    }
+}
+
+class Student extends Person {
+    greet() {
+        console.log("Hello Student", this.name);
+    }
+}
+
+const student1 = new Student("Peter");
+student1.greet();
+console.log(student1.name);
+
+// -------------------Property overiding:
+class Person {
+    constructor(name) {
+        this.name = name; // Property in the parent class
+    }
+}
+
+class Student extends Person {
+    constructor(name, grade) {
+        super(name); // Call the parent class constructor
+        this.name = "Student " + name; // Override the 'name' property
+        this.grade = grade; // New property specific to Student
+    }
+}
+
+const student1 = new Student("Peter", "A");
+console.log(student1.name); // Output: Student Peter (overridden in Student class)
+console.log(student1.grade); // Output: A (specific to Student class)
+
+const person1 = new Person("John");
+console.log(person1.name); // Output: John (from the parent class)
+
+// ---------------------------------------------------------------------------
+
+// JavaScript Static Method : JavaScript Static Method bound to a class, not to the instance of that class. You cannot call a static method on an object, it can be called on the classes.
 
 
-
-
-//  3)Try and Catch
+// Syntax
+class ClassName {
+    static greet() {
+      // Method logic here
+    }
+  }
+  
+  // Call the static method directly on the class
+  ClassName.greet();
+  
+//   Example: Static Methods vs Instance Methods
+class Person {
+    constructor(name) {
+      this.name = name; // Instance property
+    }
+  
+    greet() {
+      console.log(`Hello, ${this.name}`); // Instance method
+    }
+  
+    static describe() {
+      console.log("This is a Person class."); // Static method
+    }
+  }
+  
+  const person1 = new Person("Alice");
+  
+  // Calling instance method
+  person1.greet(); // Output: Hello, Alice
+  
+  // Calling static method
+  Person.describe(); // Output: This is a Person class
+  
+  // Attempting to call a static method on an instance (ERROR)
+  try {
+    person1.describe(); // Error: person1.describe is not a function
+  } catch (e) {
+    console.log(e.message);
+  }
+  
+  // ----------------------------------------------------------------------------
