@@ -682,3 +682,11 @@ btn.addEventListner('click', function(){
     console.log("Successfully adding event listner on btn");
     
 })
+
+// we can siparately do this tasks as well, mean calling the function or 
+let btn = Document.getElementById('btn');
+
+function addeventlistner() {
+console.log("Successfully adding event listner on btn");  
+}
+btn.addEventListner('click', addeventlistner);
