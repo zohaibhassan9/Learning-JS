@@ -647,10 +647,22 @@ person1.display(); //  Finally get the execution
 
 // HTML EVENT HANDLER ATTRIBUTES
 <div id= "container">
+<button type= "button" onclick = "console.log('Button Clicked!')">Click Here!</button>
+</div>
+// lot of methods are avalable to better understand abot onlick enent handler, a one is given below
+
+{/* <div id= "container">
 <button type= "button" onclick = "displayName()">Click Here!</button>
 </div>
-// lot of methods are avalable to better understand about onlick enent handler, a one is given below
+//lot of methods are avalable to better understand about onlick enent handler, a one is given below
 
+
+<script>
 function displayName(){
     console.log("Button Clicked through the reference of this function");
 }
+</script> */}
+// we can pass "event tab" in the console 
+<div id= "container">
+<button type= "button" onclick = "console.log('event')">Click Here!</button>
+</div>
