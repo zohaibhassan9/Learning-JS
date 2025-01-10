@@ -670,7 +670,7 @@ function displayName(){
 // Add Event Listner & Remove Event Listner: This both methods are used to add or remove events in the programme.
 
 // Syntax for the addEventListner:-
-addEventListner(evnt, function, useCapture)  //  The Third method is not important because it false by default. this useCapture is a boolian value that excepts trye or false
+addEventListner(evnt, function, useCapture)  //  The Third method is not important because it false by default. this useCapture is a boolian value that excepts true or false
 
 
 <div>
