@@ -667,3 +667,4 @@ function displayName(){
 <button type= "button" onclick = "console.log('event')">Click Here!</button>
 </div>
 
+// Add Event Listner & Remove Event Listner: This both methods are used to add or remove events in the programme.
