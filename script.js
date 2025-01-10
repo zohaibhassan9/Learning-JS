@@ -667,6 +667,8 @@ function displayName(){
 <button type= "button" onclick = "console.log('event')">Click Here!</button>
 </div>
 
+// ---------------------------------------------------------------
+
 // Add Event Listner & Remove Event Listner: This both methods are used to add or remove events in the programme.
 
 // Syntax for the addEventListner:-
@@ -682,11 +684,11 @@ btn.addEventListner('click', function(){
     console.log("Successfully adding event listner on btn");
     
 })
+// ---------------------------------------------------------------
 
 // we can siparately do this tasks as well, mean calling the function or 
 let btn = Document.getElementById('btn');
 
 function addeventlistner() {
-console.log("Successfully adding event listner on btn");  
-}
+console.log("Successfully adding event listner on btn");}
 btn.addEventListner('click', addeventlistner);
