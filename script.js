@@ -638,3 +638,19 @@ person1.display(); //  Finally get the execution
 // -------------------------------------------------------------
 // DOM: Document Objective Model is an API for manipulating HTML document.
 // DOM provdes functions that allosws us to add, remove and modify the parts of the document effectively.
+// /getElementById method
+
+
+// Event Bubbling: Event starts at the most specific elemnt and flows towards least specific element .
+// Event Capturing: Event starts at the least specific elemnt and flows towards most specific element .
+// Event handler: is a piece od code that will be executed when the event occurs. Event Handler is also known as Event Listener.
+
+// HTML EVENT HANDLER ATTRIBUTES
+<div id= "container">
+<button type= "button" onclick = "displayName()">Click Here!</button>
+</div>
+// lot of methods are avalable to better understand about onlick enent handler, a one is given below
+
+function displayName(){
+    console.log("Button Clicked through the reference of this function");
+}
