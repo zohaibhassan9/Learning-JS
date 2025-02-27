@@ -808,4 +808,24 @@ function spreadOprator(a, b){
     }
     const restOprator =  ["abc", "bvcd"]
     console.log(spreadOprator.apply(null, restOprator ));
-    VM182:5 abcbvcd
+    //  mixing 
+function spreadOprator(a, b){
+return a+b;
+}
+const restOprator =  ["abc", "bvcd"]
+console.log(spreadOprator(...restOprator ));
+
+
+    //  ANOTHER mixing 
+function createGreeting(greeting){
+return function(...args){
+if (args.length > 0){
+    return  `${greeting},  ${args.join(' ')}`!;
+}
+return `${greeting}, world!`
+
+};
+
+}
+const greet = createGreeting('Hello');
+console.log(greet());
