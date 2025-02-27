@@ -706,7 +706,7 @@ btn.addEventListner('click', addeventlistner);
 
 
 
-//Eloquent JavaScript
+///////////////Eloquent JavaScript
 function printFarmInventory(cows, chickens){
 
 let cowString = String(cows);
@@ -730,7 +730,7 @@ printFarmInventory(7, 11);
 
 
 
-// simple function
+/////////////////// simple function
 let sumFunction = function(a, b){
 
     let sum = a + b;
@@ -746,7 +746,7 @@ function f(a, b){
 f(10, 20);
 
 
-// Immediately Invoked Function Expression (IIFE)
+//////////////////// Immediately Invoked Function Expression (IIFE)
 const result = (function (a, b){
     let sum = a + b;
     return sum;
@@ -754,7 +754,7 @@ const result = (function (a, b){
 console.log(result);
 
 
-// Functions Within Functions
+////////////////////// Functions Within Functions
 function createFunction(){
 function f(a, b){
     let sum = a + b;
@@ -766,7 +766,7 @@ return f;
 const f  = craeteFunction(20, 30);
 console.log(f(20, 30));
 
-// Function Hosting
+/////////////////////// Function Hosting
 function createFunction(){
     return f;
 function f(a, b){
@@ -778,7 +778,7 @@ return sum;
 const f = createFunction()
 console.log(f(10, 20));
 
-// Clourses in javascript
+/////////////////////////// Clourses in javascript
 function clousreInviroment(a){
 
 function lexicalFunction(b){
@@ -798,7 +798,7 @@ const arrowFunction = (a, b) => {
 }
 arrowFunction(10, 20);
 
-// omit return to make a arrow function
+//////////////////// omit return to make a arrow function
 const arrowFunction = (a, b) => a + b;
 arrowFunction(10, 20);
 
@@ -808,19 +808,18 @@ function spreadOprator(a, b){
     }
     const restOprator =  ["abc", "bvcd"]
     console.log(spreadOprator.apply(null, restOprator ));
-    //  mixing 
+    //////////////////////////  mixing 
 function spreadOprator(a, b){
 return a+b;
 }
 const restOprator =  ["abc", "bvcd"]
 console.log(spreadOprator(...restOprator ));
 
-
-    //  ANOTHER mixing 
+//////////////////////  ANOTHER mixing 
 function createGreeting(greeting){
 return function(...args){
 if (args.length > 0){
-    return  `${greeting},  ${args.join(' ')}`!;
+    return  `${greeting},  ${args.join(' ')}!`;
 }
 return `${greeting}, world!`
 
