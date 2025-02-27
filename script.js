@@ -790,3 +790,10 @@ return lexicalFunction;
 
 const lexicalFunction = clousreInviroment(10);
 console.log(lexicalFunction(20));
+
+// Arrow function
+const arrowFunction = (a, b) => {
+    let sum = a + b;
+    return sum;
+}
+arrowFunction(10, 20);
