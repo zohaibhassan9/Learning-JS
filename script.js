@@ -797,3 +797,7 @@ const arrowFunction = (a, b) => {
     return sum;
 }
 arrowFunction(10, 20);
+
+// omit return to make a arrow function
+const arrowFunction = (a, b) => a + b;
+arrowFunction(10, 20);
