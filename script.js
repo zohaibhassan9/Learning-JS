@@ -777,3 +777,16 @@ return sum;
 
 const f = createFunction()
 console.log(f(10, 20));
+
+// Clourses in javascript
+function clousreInviroment(a){
+
+function lexicalFunction(b){
+    let sum  = a + b;
+    return sum;
+}
+return lexicalFunction;
+};
+
+const lexicalFunction = clousreInviroment(10);
+console.log(lexicalFunction(20));
