@@ -801,3 +801,11 @@ arrowFunction(10, 20);
 // omit return to make a arrow function
 const arrowFunction = (a, b) => a + b;
 arrowFunction(10, 20);
+
+// Spread Oprator or Rest opator
+function spreadOprator(a, b){
+    return a+b;
+    }
+    const restOprator =  ["abc", "bvcd"]
+    console.log(spreadOprator.apply(null, restOprator ));
+    VM182:5 abcbvcd
