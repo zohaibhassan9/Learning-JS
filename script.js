@@ -752,3 +752,16 @@ const result = (function (a, b){
     return sum;
 })(10, 20);
 console.log(result);
+
+// Functions Within Functions
+
+function createFunction(){
+function f(a, b){
+    let sum = a + b;
+    return sum;
+}
+return f;
+};
+
+const f  = craeteFunction(20, 30);
+console.log(f(20, 30));
