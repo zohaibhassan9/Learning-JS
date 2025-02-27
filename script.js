@@ -723,3 +723,32 @@ console.log(`${chickenString} Chickens`)
 }
 
 printFarmInventory(7, 11);
+
+
+
+
+
+
+
+// simple function
+let sumFunction = function(a, b){
+
+    let sum = a + b;
+    return sum;
+};
+sumFunction(10, 20);
+
+//anoher simple function
+function f(a, b){
+   let sum = a +b;
+   return sum;
+};
+f(10, 20);
+
+
+// Immediately Invoked Function Expression (IIFE)
+const result = (function (a, b){
+    let sum = a + b;
+    return sum;
+})(10, 20);
+console.log(result);
