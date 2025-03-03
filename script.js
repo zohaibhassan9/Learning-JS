@@ -857,4 +857,13 @@ if(Object.keys(obj).length == 0){
 else{
 return false;
 }
+
+// method three
+let count = 0;
+for(key in obj){
+    count++;
+}
+if(!count) return true;
+else false;
+
 };
