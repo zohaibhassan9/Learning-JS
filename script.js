@@ -849,6 +849,12 @@ console.log(greet());
 
 const isEmpty = function(obj){
 // method 1
-return Object
-
+return Object.keys(obj).length === 0;
+// method 2
+if(Object.keys(obj).length == 0){
+    return true;
 }
+else{
+return false;
+}
+};
