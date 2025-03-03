@@ -828,3 +828,15 @@ return `${greeting}, world!`
 }
 const greet = createGreeting('Hello');
 console.log(greet());
+
+
+
+
+
+
+
+
+
+
+
+// leet code problems
