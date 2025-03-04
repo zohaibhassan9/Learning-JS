@@ -892,6 +892,7 @@ return result;
 
 Array.prototype.last = function (){
 // method 1
+return this.length > 0 ? this[this.length -1] : -1;
 
 
 
