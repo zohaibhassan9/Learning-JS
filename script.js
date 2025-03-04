@@ -910,7 +910,14 @@ else{
 // sortedArr must be sorted in ascending order by fn output.
 // You may assume that fn will never duplicate numbers for a given array.
 const sortArray = function(){
-return((a, b) =>{
+return((a, b) => {
 return (fn(a) > fn(b)? 1:-1)
 })
 };
+
+// 2nd method for the problem
+const sortArray = function(){
+retun ((a, b) => {
+return fn(a)-fn(b);
+})    
+}
