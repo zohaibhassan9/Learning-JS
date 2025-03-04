@@ -909,4 +909,8 @@ else{
 // You can assume fn only returns numbers and those numbers determine the sort order of sortedArr. 
 // sortedArr must be sorted in ascending order by fn output.
 // You may assume that fn will never duplicate numbers for a given array.
-
+const sortArray = function(){
+return((a, b) =>{
+return (fn(a) > fn(b)? 1:-1)
+})
+};
