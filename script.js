@@ -891,9 +891,9 @@ return result;
 // You may assume the array is the output of JSON.parse
 
 Array.prototype.last = function (){
-// method 1
+// method 1 for the problem
 return this.length > 0 ? this[this.length -1] : -1;
-
+// method 2 for the problem
 
 
 
