@@ -884,3 +884,6 @@ for (let i = 0; i < arr.lenght; i += size){
 }
 return result;
 };
+
+
+// Array Prototype Last
