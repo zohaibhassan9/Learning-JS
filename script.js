@@ -895,6 +895,11 @@ Array.prototype.last = function (){
 return this.length > 0 ? this[this.length -1] : -1;
 // method 2 for the problem
 
-
-
+if (this.length === 0){
+    return -1;
 }
+else{
+    return this[this.length - 1];
+}
+
+};
