@@ -923,11 +923,11 @@ return fn(a)-fn(b);
 }
 
 
-///////////////////////////// ProtoType In JavaScript
+/////////////////// ProtoType In JavaScript/////////////////////
 // In JavaScript, prototype is a way to share methods and properties among all instances of a constructor function.
 function Person(name) {
-    this.name = name;
-  }
+this.name = name;
+}
   
   Person.prototype.greet = function () {
     console.log(`Hello, my name is ${this.name}`);
@@ -936,3 +936,43 @@ function Person(name) {
   const john = new Person("John");
   john.greet(); // Output: Hello, my name is John
   
+
+//////////////////javascript classes Constructor functions///////////////////
+class Animal {
+constructor(name) {
+this.name = name;
+}
+
+speak() {
+console.log(`${this.name}, Berks`);
+}
+}
+
+const dog = new Animal("Dog");
+dog.speak();
+
+////////////// Class Inheritance ////////////
+class Animal{
+    constructor(name)
+        {
+          this.name = name;  
+        }
+    
+    speak(){
+    console.log(`${this.name}, berks and make a noise`)
+    }   
+    }
+    
+    class Dog extends Animal{
+    constructor(name, breed){
+        super(name);
+    this.breed= breed;
+        
+    }
+    speak(){
+    console.log(`${this.name}, Berks`);
+    }
+    }
+    
+    const dog = new Dog('Jaguar');
+    dog.speak();
