@@ -921,3 +921,18 @@ retun ((a, b) => {
 return fn(a)-fn(b);
 })    
 }
+
+
+///////////////////////////// ProtoType In JavaScript
+// In JavaScript, prototype is a way to share methods and properties among all instances of a constructor function.
+function Person(name) {
+    this.name = name;
+  }
+  
+  Person.prototype.greet = function () {
+    console.log(`Hello, my name is ${this.name}`);
+  };
+  
+  const john = new Person("John");
+  john.greet(); // Output: Hello, my name is John
+  
