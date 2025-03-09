@@ -953,7 +953,7 @@ dog.speak();
 
 ////////////// Class Inheritance ////////////
 class Animal{
-    constructor(name)
+ constructor(name)
         {
           this.name = name;  
         }
@@ -976,3 +976,6 @@ class Animal{
     
     const dog = new Dog('Jaguar');
     dog.speak();
+
+    console.log(dog instanceof Dog); //true
+    console.log(dog instanceof Animal); //true
