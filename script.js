@@ -1039,7 +1039,7 @@ class Animal{
             class Fan extends Appliance {
             
                 fanOn(){
-                    console.log('Fan is going to offline when there is no electricity')
+                    console.log('Fan is going to offline when there is no electricity');
                 }
             }
             
