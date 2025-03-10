@@ -1045,3 +1045,18 @@ class Animal{
             
             const pankha = new Fan();
             pankha.fanOn();
+
+
+///////////////Factory Function//////////////
+
+        function humanMeaning(name, age){
+        return {
+        name,
+        age,
+        orignalHuman(){
+        console.log(`This person belongs tu humainty and his name is ${this.name} and his age are ${this.age}.`);
+        },
+        }
+        }
+        const Person = new humanMeaning('Zohaib', 23);
+        Person.orignalHuman();
