@@ -979,3 +979,45 @@ class Animal{
 
     console.log(dog instanceof Dog); //true
     console.log(dog instanceof Animal); //true
+
+    //////////////////OPP javscript abstraction method/////////////////////
+
+    class BankAccount {
+
+        #balance;
+            
+            constructur(initialBalance){
+                this.#balance = initialBalance;
+            }
+        
+        
+            deposit(amount){
+        
+                if (amount > 0){
+                    this.#balance += amount;
+                    console.log(`Deposited: $${amount}`)
+                    
+                }
+            }
+        
+        withdraw(amount){
+        if(amount < this.#balance){
+           console.log('Funds are insuficent');
+        return;
+        }
+            this.#balance -= amount;
+            console.log(`Widhdrawal: $${amount}`)
+        }
+        
+        getBalance(){
+            return `your balance is $${this.#balance}`;
+        }   
+        };
+        
+        const cash = new BankAccount(30000);
+        cash.deposit(1000);
+        cash.withdraw(2000);
+        
+        console.log(cash.getBalance());
+
+
