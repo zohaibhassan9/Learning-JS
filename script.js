@@ -986,7 +986,7 @@ class Animal{
 
         #balance;
             
-            constructur(initialBalance){
+            constructor(initialBalance){
                 this.#balance = initialBalance;
             }
         
@@ -1020,4 +1020,30 @@ class Animal{
         
         console.log(cash.getBalance());
 
+
+////////////////////// Abstract Classes (Simulated in JS, No Direct Support)/////////////////
+        class Appliance {
+
+            constructor(){
+            if(new.target === Appliance)
+            {throw new Error(console.log('Cannot Proceedd'));
+            }
+            }
+            
+            fanOn(){
+            
+                console.log('Fan is onlines');
+            }
+            }
+            
+            class Fan extends Appliance {
+            
+                fanOn(){
+                    console.log('Fan is going to offline when there is no electricity')
+                }
+            }
+            
+            const pankha = new Fan();
+            pankha.fanOn();
+            VM1605:18 Fan is going to offline when there is no electricity
 
