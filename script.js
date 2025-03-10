@@ -1045,5 +1045,3 @@ class Animal{
             
             const pankha = new Fan();
             pankha.fanOn();
-            VM1605:18 Fan is going to offline when there is no electricity
-
