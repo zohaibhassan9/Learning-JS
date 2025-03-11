@@ -980,7 +980,7 @@ class Animal{
     console.log(dog instanceof Dog); //true
     console.log(dog instanceof Animal); //true
 
-    //////////////////OPP javscript abstraction method/////////////////////
+    //////////////////OPP javscript Encapsulation method/////////////////////
 
     class BankAccount {
 
@@ -1021,7 +1021,20 @@ class Animal{
         console.log(cash.getBalance());
 
 
-////////////////////// Abstract Classes (Simulated in JS, No Direct Support)/////////////////
+        class Bank Account{
+           
+      #balance;
+      constructor(balance){
+
+
+
+
+      }
+
+        }
+
+
+//////////////////////Abstract Classes (Simulated in JS, No Direct Support)/////////////////
         class Appliance {
 
             constructor(){
@@ -1046,6 +1059,27 @@ class Animal{
             const pankha = new Fan();
             pankha.fanOn();
 
+////////////// Abstraction Using Factory Functions //////////////
+function createPerson(name, age) {
+    let _age = age;
+
+    return {
+        getName: () => name,
+        getAge: () => _age,
+        setAge: (newAge) => {
+            if (newAge > 0) _age = newAge;
+        }
+    };
+}
+
+const person = createPerson("John", 25);
+console.log(person.getName()); // ✅ John
+console.log(person.getAge());  // ✅ 25
+person.setAge(30);
+console.log(person.getAge());  // ✅ 30
+
+// console.log(person._age); // ❌ Undefined (Cannot access private variable)
+
 
 ///////////////Factory Function//////////////
 
@@ -1060,6 +1094,27 @@ class Animal{
         }
         const Person = new humanMeaning('Zohaib', 23);
         Person.orignalHuman();
+
+///////////////////Factory Function with shared methods/////////////////
+const personMethods = {
+greet(){
+console.log(`My name is ${this.name} andm my age are ${this.age}`);
+}
+}
+
+function createPerson(name, age){
+const person = Object.create(personMethods); // Prototype-based delegation
+person.name = name;
+person.age = age;
+return person;
+
+}
+
+const person = createPerson('xohaiv', 23);
+const person1 = createPerson('vohaib', 40);
+
+person.greet();
+person2.greet();
 
 
 /////////////////Learning JS OOP Concepts////////////////
