@@ -1060,3 +1060,6 @@ class Animal{
         }
         const Person = new humanMeaning('Zohaib', 23);
         Person.orignalHuman();
+
+
+        /////////////////Learning JS OOP Concepts////////////////
