@@ -1079,3 +1079,37 @@ displayShow(){
 
 const carShow = new Car('Camry', 2020);
 carShow.displayShow();
+
+///////////// Polymorphism (Method Overriding) /////////////
+//polymorphism also known as method(objects) overiding in JavaScript OOP. 
+class Animal {
+
+    makeSound(){
+        console.log('Dogs are burking');
+        
+    }
+}
+
+
+class Cat extends Animal{
+
+makeSound(){
+    console.log('Miao Miao');
+    
+}
+}
+
+class Dinosaour extends Animal{
+
+    makeSound(){
+
+        console.log('Dinosour day');
+        
+    }
+}
+
+
+const animals = [new Animal(), new Cat(), new Dinosaour()];
+animals.forEach(animal => animal.makeSound());
+
+//  This phenonmenon known as polymorphism in javscript
