@@ -1066,3 +1066,16 @@ class Animal{
 // Inheritance:
 // when objects of child elements requires all properties and behaviours of parent object,
 // then this phenomenon known as Inheritance in Objec Oriented Programming of JavScript
+class Car {
+constructor(model, year){
+this.model = model;
+this.year = year;
+}
+
+displayShow(){
+    console.log(`Model: ${this.model}, Year: ${this.year} `)
+}
+};
+
+const carShow = new Car('Camry', 2020);
+carShow.displayShow();
