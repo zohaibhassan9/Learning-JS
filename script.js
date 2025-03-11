@@ -1062,4 +1062,7 @@ class Animal{
         Person.orignalHuman();
 
 
-        /////////////////Learning JS OOP Concepts////////////////
+/////////////////Learning JS OOP Concepts////////////////
+// Inheritance:
+// when objects of child elements requires all properties and behaviours of parent object,
+// then this phenomenon known as Inheritance in Objec Oriented Programming of JavScript
