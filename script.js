@@ -1167,4 +1167,45 @@ class Dinosaour extends Animal{
 const animals = [new Animal(), new Cat(), new Dinosaour()];
 animals.forEach(animal => animal.makeSound());
 
-//  This phenonmenon known as polymorphism in javscript
+
+
+//////////////////// DATA Strutures and Alghorithm////////////////////
+//stack
+class Stack{
+    constructor(){
+        this.item = []; 
+    }
+
+//add yani push
+push(element){
+    this.item.push(element);
+}
+
+pop(){
+    if(this.isEmpty())
+return 'Stack is empety!';
+return this.item.pop();
+}
+
+peek(){
+    if(this.isEmpty())
+        return 'STACK IS EMPETY!';
+return this.item[this.item.length-1];
+}
+
+isEmpty(){
+    return this.item.length === 0;
+}
+size(){
+
+    return this.item.length;
+}
+}
+
+const stack = new Stack();
+stack.push(10);
+stack.pop(20);
+console.log('Removed', stack.peek());
+console.log("Removed:", stack.pop());
+console.log("Stack size:", stack.size());
+console.log("Is stack empty?", stack.isEmpty());
