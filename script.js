@@ -1228,6 +1228,7 @@ class Node{
         console.log(node1);
 
         /////////////Data Structure//////////
+        // A Data Structure is a specialized format for organizing, managing, and storing data efficiently
         // Data Structire is a systematic way to organise data so that it can be used effciently.
 
         //Dictionary Information
@@ -1285,3 +1286,7 @@ class Stack {
   stack.pop();
   console.log(stack.peek()); // 10
   
+
+
+  ////////////////////  LINKED LIST  ///////////////////
+  Linked List is nothing but sequence of nodes conneccted with eachother.
