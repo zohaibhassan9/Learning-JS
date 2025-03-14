@@ -1246,7 +1246,7 @@ class Node{
 
         ///////////Data Types vs. Abstract Data Types/////////////
 // Data type tell us the kind of value of a variable can and the oprations that can be performed on it.
-// primitive data types: Number, noolian , string, undeifned , null = // non-primitive data type: object, array, function, Sey, Map(OPRATIONS > Arthematic and Assignment Oprators)
+// primitive data types: Number, noolian , string, undeifned , null === non-primitive data type: object, array, function, Sey, Map(OPRATIONS > Arthematic and Assignment Oprators)
 
 //Abstract Data Types (OPRATIONS > INSERT, DELETE, SEACRH, SORT)
 // It is a highlevel concept of data structure that defines how to organise data and which actions or oprations are allowed.
