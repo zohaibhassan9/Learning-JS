@@ -1209,3 +1209,22 @@ console.log('Removed', stack.peek());
 console.log("Removed:", stack.pop());
 console.log("Stack size:", stack.size());
 console.log("Is stack empty?", stack.isEmpty());
+
+
+///// Node List, HOW to create a single node list:
+class Node{
+
+    constructor(data){
+    
+        this.data = data;
+        this.next = null
+    }    
+    };
+        const node1 = new Node(10);
+        console.log(node1);
+        
+        //if we want to ceate a next node or link first node to the second node , then
+        const node1 = new Node(10);
+        const node2 = new Node(20);
+        node1.next  = node2;
+        console.log(node1);
