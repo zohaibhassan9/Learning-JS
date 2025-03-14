@@ -1182,14 +1182,12 @@ push(element){
 }
 
 pop(){
-    if(this.isEmpty())
-return 'Stack is empety!';
-return this.item.pop();
+return this.isEmpty()? "Stack is empety!" : this.item.pop();
 }
 
 peek(){
-    if(this.isEmpty())
-        return 'STACK IS EMPETY!';
+if(this.isEmpty())
+return 'STACK IS EMPETY!';
 return this.item[this.item.length-1];
 }
 
@@ -1222,9 +1220,68 @@ class Node{
     };
         const node1 = new Node(10);
         console.log(node1);
-        
+
         //if we want to ceate a next node or link first node to the second node , then
         const node1 = new Node(10);
         const node2 = new Node(20);
         node1.next  = node2;
         console.log(node1);
+
+        /////////////Data Structure//////////
+        // Data Structire is a systematic way to organise data so that it can be used effciently.
+
+        //Dictionary Information
+        // The quantities , symbols , or charcater on which oprations are performed by a computer and which may be converted and transmitted into electrical signals.
+        // example c = a + b;
+        
+        // Data: YM EMAN SI BIAHOZ  (just collection of characters)
+        // Information: MT NAME IS ZOHAIB. (actual Information);
+
+
+
+        //////////// Arrays, insted of vars to stora and organise data/////////////////
+        // Insted of creating multiple var for storing data of same type, why not create an array to store a data
+        
+
+
+        ///////////Data Types vs. Abstract Data Types/////////////
+// Data type tell us the kind of value of a variable can and the oprations that can be performed on it.
+// primitive data types: Number, noolian , string, undeifned , null = // non-primitive data type: object, array, function, Sey, Map(OPRATIONS > Arthematic and Assignment Oprators)
+
+//Abstract Data Types (OPRATIONS > INSERT, DELETE, SEACRH, SORT)
+// It is a highlevel concept of data structure that defines how to organise data and which actions or oprations are allowed.
+//Stack(LIFO)
+//List(ordered collection of elements)
+//queue(FIFO), Deque
+//Graph, Tree, Hash Table
+code:
+class Stack {
+    constructor() {
+      this.items = [];
+    }
+    // ADT Operation: Push (Add element)
+    push(element) {
+      this.items.push(element);
+    }
+    // ADT Operation: Pop (Remove top element)
+    pop() {
+      if (this.isEmpty()) return "Stack is empty";
+      return this.items.pop();
+    }
+    // ADT Operation: Peek (View top element)
+    peek() {
+      return this.isEmpty() ? "Stack is empty" : this.items[this.items.length - 1];
+    }
+    // Check if stack is empty
+    isEmpty() {
+      return this.items.length === 0;
+    }
+  }
+  // Using Stack ADT
+  const stack = new Stack();
+  stack.push(10);
+  stack.push(20);
+  console.log(stack.peek()); // 20
+  stack.pop();
+  console.log(stack.peek()); // 10
+  
