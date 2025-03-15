@@ -1290,3 +1290,70 @@ class Stack {
 
   ////////////////////  LINKED LIST  ///////////////////
   Linked List is nothing but sequence of nodes conneccted with eachother.
+
+
+
+
+  ////////Understanding the Void Pointers//////////
+  Void pointers, Void mean undefined in 'C' and 'C++', And in JavaScript it means to Undefined.Account
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ ///// C, C++, and JavaScript void Ponters/////
+///(using undefined)////
+function examle(){
+    return undefined;
+};
+const ptr = example();
+console.log(ptr);  //Undefined
+
+/// Using Javscript Dynamically Typing//
+let ptr;   
+
+ptr = 45;
+console.log(ptr);  //45
+ptr == 'Hello';
+
+console.log(ptr); //Hello
+
+ptr = ={name: "Alice"};
+console.log(ptr); //Alice
+
+
+////Using Javascript Null method///
+
+let ptr = null;
+if(ptr === null){
+    console.log('Pointer is empety!');   //Pointer is empety!.
+}; 
+//////////////////////////////////////////////////////////////////////////////////////
+///Understanding the Null Pointers/////
+Null pointers in C,C++, and JavScript are those pointers that does not point to a valid memory location.
+
+let ptr = null;
+if(ptr === null){
+    console.log('Pointer is empety!');   //Pointer is empety!.
+}; 
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+///// C, C++, and JavaScript DANGLING Ponters/////
+// A dangling pointer is a pointer that still ponits to a memory location that has been freed or deallocated or points to non-existing memory location.
+// Accessing a dangling pointer is taugh because its behaviur are like undefned type and made errors or programme crusehes. 
+
+
+//Havscript:
+let obj = { name: "Alice" };
+console.log(obj.name); // Alice
+
+obj = null; // Object is now inaccessible (like free/delete in C++)
+console.log(obj.name); // ERROR: Cannot read property 'name' of null
+
+// before accesing in garbage collection memory, please always check that it will not null or defined.
+let obj = {name: "Ali"};
+if(!obj == null){
+    console.log(obj.name);
+};
+
