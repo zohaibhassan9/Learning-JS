@@ -1167,8 +1167,9 @@ class Dinosaour extends Animal{
 const animals = [new Animal(), new Cat(), new Dinosaour()];
 animals.forEach(animal => animal.makeSound());
 
-
-
+/////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
 //////////////////// DATA Strutures and Alghorithm////////////////////
 //stack
 class Stack{
@@ -1209,7 +1210,7 @@ console.log("Stack size:", stack.size());
 console.log("Is stack empty?", stack.isEmpty());
 
 
-///// Node List, HOW to create a single node list:
+///// Node Class > Linkedlist, HOW to create a single node list:
 class Node{
 
     constructor(data){
@@ -1292,16 +1293,11 @@ class Stack {
   Linked List is nothing but sequence of nodes conneccted with eachother.
 
 
-
-
-  ////////Understanding the Void Pointers//////////
-  Void pointers, Void mean undefined in 'C' and 'C++', And in JavaScript it means to Undefined.Account
-
-
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
-
- ///// C, C++, and JavaScript void Ponters/////
+//Understanding the Void Pointers//
+// A void pointer (void*) is a generic pointer that can point to any data type.
+// Void pointers, Void mean undefined in 'C' and 'C++', And in JavaScript it means to////
+// C, C++, and JavaScript void Ponters//
 ///(using undefined)////
 function examle(){
     return undefined;
@@ -1356,4 +1352,49 @@ let obj = {name: "Ali"};
 if(!obj == null){
     console.log(obj.name);
 };
+ 
+//////////////////////////////////////////////////////////////////////////////////////
+// WILD POINTER
+// A wild pointer is a poinnter that has not been initilized , meaning it points to a random memory location.
+// Like Dangling ponter , if we try to access sild pointer is taugh because its behaviur is undefined type, and make erros and crushes in the the Programme.
 
+// Example 1: Uninitialized Pointer (Wild Pointer)
+int main(){
+    int *ptr;
+    printf('%d', *ptr);
+
+    return 0;
+}
+
+Solution Example1: Aways initialized pointers
+int main(){
+    int a = 10;
+    int *ptr = &a;
+//(or *ptr = NULL)
+    printf('%d', *ptr);
+    return 0;
+};
+
+// Example 2: Pointer After free()
+
+int main(){
+    int *ptr = (int *)malloc(sizeof(int));
+   *ptr = 50;
+   free(ptr);
+    printf('%d', *ptr); // ❌ ERROR: Wild Pointer (Using freed memory)
+
+    return 0;
+}
+
+// it solution is to use Null
+int main(){
+    int *ptr = (int *)malloc(sizeof(int));
+   *ptr = 50;
+   free(ptr);
+   ptr = NULL; //Now it is save
+    printf('%d', *ptr); 
+
+    return 0;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////
