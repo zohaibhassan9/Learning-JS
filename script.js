@@ -1290,8 +1290,31 @@ class Stack {
 
 
   ////////////////////  LINKED LIST  ///////////////////
+  A linked list is a linear data structure where elements (nodes) are stored dynamically.
   Linked List is nothing but sequence of nodes conneccted with eachother.
 
+    class List{
+    constructor(data){
+    this.head = {
+    value: data,
+    next: null
+    };
+    this.tail = this.head;
+    }
+
+    //adding a newNode next to the previus one
+    appenNode(nodeData){
+        let newNode = {
+        value : nodeData,
+        next : null
+    }
+    this.tail.next = newNode;
+    this.tail = newNode;
+    }
+    }
+    const newNodes= new List(20);
+    console.log('New Nodes:', JSON.stringify(newNodes, null, 2));
+    // JSON.stringify(object, replacer, space)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Understanding the Void Pointers//
