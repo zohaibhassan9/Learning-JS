@@ -1421,3 +1421,42 @@ int main(){
 }
 
 //////////////////////////////////////////////////////////////////////////////////////
+/////// Niked List, Singly Linked List///////
+class Node {
+    constructor(data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+
+class LinkedList{
+constructor(data){
+this.head = new Node(data);
+this.tail = this.head;
+
+} 
+
+appendNode(nodeData){
+let newNode = new Node(nodeData);
+    this.tail.next = newNode;
+    this.tail = newNode;
+    
+}
+
+display(){
+let current = this.head;
+let elements = [];
+    while(current){
+    elements.push(current.data);
+    current = current.next;
+    }
+    console.log(elements.join("->"));
+  }  
+}
+const newLinkedList = new LinkedList(20);
+newLinkedList.appendNode(20);
+newLinkedList.appendNode(30);
+newLinkedList.appendNode(40);
+
+
+newLinkedList.display();
