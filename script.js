@@ -1421,7 +1421,7 @@ int main(){
 }
 
 //////////////////////////////////////////////////////////////////////////////////////
-/////// Niked List, Singly Linked List///////
+/////// Linked List, Singly Linked List///////
 class Node {
     constructor(data) {
         this.data = data;
@@ -1464,7 +1464,7 @@ newLinkedList.display();
 
 
 //////////////////////////////////////////////////////////////////////////////////////
-/////// Niked List, Doubly Linked List///////
+/////// Linked List, Doubly Linked List///////
 
 class Node{
 
@@ -1529,3 +1529,56 @@ newDoublyNode.appendNode(70);
 newDoublyNode.displayForward()
 newDoublyNode.displayBackward()
 
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+/////// Linked List, Circular Singly Linked List///////
+class Node{
+    constructor(data){
+        this.data = data;
+        this.next = null;
+    }
+}
+
+
+class CircularSinglyLinkedList{
+constructor(data){
+const newNode = new Node(data);
+this.head = newNode;
+this.tail = newNode;
+this.tail.next = this.head;
+}
+
+appendNode(nodeData){
+    const newNode = new Node(nodeData);
+    this.head = newNode;
+    this.tail = newNode;
+    this.tail.next = this.head;
+}
+
+displayCircularSinglyLinkedList(){
+
+    if (!this.head) return console.log('List are empety')
+    let current = this.head;
+    let elements = [];
+    do{
+        elements.push(current.value);
+        current = current.next;
+    }
+    while(current !==this.head)
+
+console.log('Circular List', elements.join('->'))
+
+}
+}
+
+const newList = new CircularSinglyLinkedList(20);
+
+newList.appendNode(30);
+newList.appendNode(40);
+newList.appendNode(50);
+newList.appendNode(60);
+newList.appendNode(70);
+
+newList.displayCircularSinglyLinkedList();
