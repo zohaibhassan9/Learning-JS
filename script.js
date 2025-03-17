@@ -1437,7 +1437,7 @@ this.tail = this.head;
 } 
 
 appendNode(nodeData){
-let newNode = new Node(nodeData);
+const newNode = new Node(nodeData);
     this.tail.next = newNode;
     this.tail = newNode;
     
@@ -1460,3 +1460,72 @@ newLinkedList.appendNode(40);
 
 
 newLinkedList.display();
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+/////// Niked List, Doubly Linked List///////
+
+class Node{
+
+constructor(data){
+this.value = data;
+this.next = null;
+this.prev= null;
+}
+}
+
+class DoublyLinkedList{
+constructor(data){
+    const newNode = new Node(data)
+    this.head = newNode;
+    this.tail = newNode;
+}
+
+appendNode(nodeData){
+const newNode = new Node(nodeData);
+newNode.prev = this.tail;
+this.tail.next = newNode;
+this.tail = newNode;
+}
+
+
+
+displayForward(){
+let current = this.head;
+let elements = [];
+while(current){
+elements.push(current.value);
+current = current.next;
+}
+console.log(elements.join(' -> '));
+}
+
+
+displayBackward(){
+let current = this.tail;
+let elements = [];
+while(current){
+elements.push(current.value);
+current = current.prev;
+}
+console.log(elements.join(' -> '))
+}
+
+ }
+
+
+
+const newDoublyNode = new DoublyLinkedList(20);
+
+newDoublyNode.appendNode(30);
+newDoublyNode.appendNode(40);
+newDoublyNode.appendNode(50);
+newDoublyNode.appendNode(60);
+newDoublyNode.appendNode(70);
+
+
+
+newDoublyNode.displayForward()
+newDoublyNode.displayBackward()
+
