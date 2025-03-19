@@ -1588,7 +1588,7 @@ newList.displayCircularSinglyLinkedList();
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////QUEUE , DSA//////
+///////QUEUE with  a Array, DSA//////
 
 class Queue{
 
@@ -1637,3 +1637,69 @@ newQueue.display();
 console.log("FrontElement", newQueue.peek());
 console.log("Dequeue is removed", newQueue.dequeue())
 newQueue.display();
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////QUEUE with  a LinkedList, DSA//////
+
+class Node{
+constructor(data){
+this.value = data;
+this.next = null;
+}
+}
+
+
+class Queue{
+constructor(){
+this.front = null;
+this.rear = null:
+this.size = 0;
+}
+
+enqueue(nodeData){
+const newNode  = new Node(nodeData);
+if(!this.front){
+this.front = this.rear = newNode;
+}
+else{
+    this.rear.next = newNode;
+    this.rear = newNode;
+}
+this.size++;
+}
+
+dequeue(){
+if(!this.isEmpty()) return "Queue list are empty!";
+let removeItem = this.front.value;
+this.front = this.front.next;
+if(!this.front) this.rear = null;
+this.size--;
+return removeItem;
+}
+
+peek(){
+ if(!this.isEmpty()) return "Queue list are empty!";
+return this.front.value;
+}
+
+isEmpty(){
+return this.size === 0;
+}
+
+getSize(){
+    return this.size;
+}
+
+display(){
+let current = this.front;
+let elements = [];
+
+while(current){
+    elements.push()
+}
+
+}
+
+
+}
