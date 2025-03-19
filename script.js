@@ -1703,3 +1703,26 @@ while(current){
 
 
 }
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////DEQUEUE with an Array, DSA//////
+
+methods:
+insertFront (unshift(add-front))
+removeFront (shift(remove-front))
+
+insertRear (push(add-end))
+removeRear (pop(remove-end))
+
+peekFront (return this.dequeue[0])
+peekRear (return this.dequeue[this.dequeue.length - 1])
+
+isEmpty (return this.dequeue.length === 0)
+size (return this.dequeue.length)
+
+
+display ("Dequeue", this.dequeue.join('-> also <-'))
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////DEQUEUE with a LinkedList, DSA//////
