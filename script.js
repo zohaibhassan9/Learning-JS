@@ -1171,8 +1171,10 @@ animals.forEach(animal => animal.makeSound());
 ///////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 //////////////////// DATA Strutures and Alghorithm////////////////////
-//stack
-class Stack{
+
+
+////////////////stack
+/class Stack{
     constructor(){
         this.item = []; 
     }
@@ -1582,3 +1584,56 @@ newList.appendNode(60);
 newList.appendNode(70);
 
 newList.displayCircularSinglyLinkedList();
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////QUEUE , DSA//////
+
+class Queue{
+
+    constructor(){
+        this.queue = [];
+    }
+    
+
+    enqueue(element){
+    this.queue.push(element);
+    }
+    
+    
+    dequeue(){
+     if(this.isEmpty()) return 'Queue is empety';
+      return this.queue.shift();   
+        }
+    
+    peek(){
+        if(this.isEmpty) return 'Queue is empety'
+        return this.queue[0]
+    }
+    isEmpty(){
+        return this.queue.length === 0;
+    }
+    
+    size(){
+    
+       return this.queue.length;
+    }
+    
+    display(){
+        return this.queue.join("->");
+    }
+        
+        }
+    
+    const newQueue = new Queue();
+    newQueue.enqueue(20);
+    newQueue.enqueue(40);
+    newQueue.enqueue(50);
+    newQueue.enqueue(30);
+    
+    
+newQueue.display();
+console.log("FrontElement", newQueue.peek());
+console.log("Dequeue is removed", newQueue.dequeue())
+newQueue.display();
