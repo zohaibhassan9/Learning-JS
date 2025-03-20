@@ -1726,3 +1726,78 @@ display ("Dequeue", this.dequeue.join('-> also <-'))
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////DEQUEUE with a LinkedList, DSA//////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////Non-Linior Data-Structures, DSA//////
+
+///////////TREES/////////
+A Tree is a hirearchical Data Structure which concists on two things:
+1: nodes
+2: Edges
+
+Reaal-life example related to hierarchy in trees data structure
+
+                 CEO
+                /   \
+         Manager1    Manager2
+                /    \
+         Employee1  Employee2
+
+////////Types of Trees////////
+1: Binary Tree 
+2: Binary Seacrh Tree
+
+✅ Binary Tree is a tree where each node contains ay least two childrens(left and right).
+
+                 10
+                /  \
+              5     20
+            / \    / \
+           3   7   15  25
+
+
+✅ Binary Search Tree is a tree where its Left child is smaller than the parent..
+and its Right child is larger than the parent.
+
+                 40
+                /  \
+              5     20
+            / \     / \
+           3   1   12  15
+
