@@ -1767,37 +1767,184 @@ display ("Dequeue", this.dequeue.join('-> also <-'))
 ///////Non-Linior Data-Structures, DSA//////
 
 ///////////TREES/////////
-A Tree is a hirearchical Data Structure which concists on two things:
-1: nodes
-2: Edges
+// Tree data structure is a hierarchical structure that is used to represent and organize data in the form of parent child relationship.
+// The following are some real world situations which are naturally a tree.
+// Folder structure in an operating system.
+// Tag structure in an HTML (root tag the as html tag) or XML document.
 
-Reaal-life example related to hierarchy in trees data structure
+// A Tree is a hirearchical Data Structure which concists on two things:
+// 1: nodes
+// 2: Edges
 
-                 CEO
-                /   \
-         Manager1    Manager2
-                /    \
-         Employee1  Employee2
+// Reaal-life example related to hierarchy in trees data structure
+
+        //          CEO
+        //         /   \
+        //  Manager1    Manager2
+        //         /    \
+        //  Employee1  Employee2
 
 ////////Types of Trees////////
-1: Binary Tree 
-2: Binary Seacrh Tree
+// 1: Binary Tree 
+// 2: Binary Seacrh Tree
 
-✅ Binary Tree is a tree where each node contains ay least two childrens(left and right).
+// ✅ Binary Tree is a tree where each node contains ay least two childrens(left and right).
 
-                 10
-                /  \
-              5     20
-            / \    / \
-           3   7   15  25
+//                  10
+//                 /  \
+//               5     20
+//             / \    / \
+//            3   7   15  25
 
 
-✅ Binary Search Tree is a tree where its Left child is smaller than the parent..
-and its Right child is larger than the parent.
+// ✅ Binary Search Tree is a tree where its Left child is smaller than the parent..
+// and its Right child is larger than the parent.
 
-                 40
-                /  \
-              5     20
-            / \     / \
-           3   1   12  15
+//                  40
+//                 /  \
+//               5     20
+//             / \     / \
+//            3   1   12  15
+
+
+
+// Why Tree is considered a non-linear data structure?
+// ANS: Beacuse the data stored in a tree in non-sequential manner or order, e.g. mean the data are not stored linealy
+// **One reason to use trees might be because you want to store information that naturally forms a hierarchy.
+// (mean: data ki darja bandi k liy istimall karty hai(hierarchy))
+
+
+class Node{
+    constructor(data){
+        this.data = data;
+          this.left = null;
+        this.right = null;
+    }
+}
+
+class BinaryTree{
+
+    constructor(){
+        this.root = null;
+
+    }
+
+
+
+
+insert(nodeData){
+const newNode = new Node(nodeData);
+if (this.root === null){
+    this.root = newNode;
+}
+    else{
+        this.insertNode(this.root, newNode)
+    }
+    
+}
+
+insertNode(node, newNode){
+if (newNode.data < node.data){
+
+if (node.left === null){
+    node.left = newNode;
+}
+    else{
+        this.insertNode(node.left, newNode)
+        }
+}
+    
+
+    else if(newNode.data > node.data){
+        if (node.right === null) {
+        node.right = newNode;
+    }
+    else{
+        this.insertNode(node.right, newNode)
+    }
+}
+}
+
+
+inOrder(node = this.root){
+if(node !==null){
+this.inOrder(node.left)
+console.log(node.data)
+this.inOrder(node.right)
+}    
+}
+
+preOrder(node = this.root){
+if(node !== null){
+console.log(node.data)
+this.preOrder(node.left)
+this.preOrder(node.right)
+}
+}
+
+
+
+postOrder(node = this.root){
+if(node !== null){
+this.postOrder(node.left);
+this.postOrder(node.right);
+console.log(node.data)
+}
+}
+search(data){
+    return this.searchNode(this.root, data)
+}
+
+
+searchNode(node, data){
+
+if(node === null) return false;
+    if(data < node.data){
+return this.searchNode(node.left, data) 
+    }
+    else if(data > node.data){
+
+        return this.searchNode(node.right, data)
+    }
+    else{
+        return true;
+}
+}
+
+
+height(node = this.root){
+if(node === null) return -1;
+    
+let leftHeight = this.height(node.left)
+    let rightHeight = this.height(node.right);
+    return Math.max(leftHeight, rightHeight) +1 ;
+
+}
+}
+
+
+
+const newTree = new BinaryTree();
+
+
+newTree.insert(29);
+newTree.insert(9);
+newTree.insert(2);
+newTree.insert(1);
+newTree.insert(22);
+newTree.insert(4);
+newTree.insert(12);
+
+
+console.log('Inorder trivarsal')
+newTree.inOrder();
+
+console.log('preOrder trivarsal')
+newTree.preOrder();
+
+console.log('postOrder trivarsal')
+newTree.postOrder();
+
+newTree.search(10)
+newTree.height();
 
