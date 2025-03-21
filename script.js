@@ -1956,3 +1956,19 @@ newTree.height();
 // AVL Tree Properties:
 // The balance factor for each node should be in the range of -1 to 1.
 // If the balance factor is less than -1 or greater than 1, the tree will perform a rotation (left or right) to maintain balance.
+
+/////////////////when to use AVL/////////////////
+//  i) when frequent use of searching, ii) when balancig of tree is important
+// iii) when insertion & delations are not too frequent
+
+
+////////////////Summary of Rotations Needed/////////////////
+// Case	Condition	Rotation Needed
+// LL	Inserted in left subtree of left child	 || Right Rotation
+// RR	Inserted in right subtree of right child || Left Rotation
+// LR	Inserted in right subtree of left child  ||	Left Rotation → Right Rotation
+// RL	Inserted in left subtree of right child  || Right Rotation → Left Rotation
+
+
+//Left Rotation (on a node) makes its right child the new parent of that node.
+//Right Rotation (on a node) makes its left child the new parent of that node.
