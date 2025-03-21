@@ -1948,3 +1948,11 @@ newTree.postOrder();
 newTree.search(10)
 newTree.height();
 
+
+////////What is an AVL Trees////////
+// *A Binary Search Tree is in balance when the difference in height between left and right subtrees is less than 2
+// *An AVL Tree is a Binary Search Tree (BST) with an additional constraint: for every node in the tree,
+// the height difference between the left and right subtrees (also known as the balance factor) must be -1, 0, or 1
+// AVL Tree Properties:
+// The balance factor for each node should be in the range of -1 to 1.
+// If the balance factor is less than -1 or greater than 1, the tree will perform a rotation (left or right) to maintain balance.
