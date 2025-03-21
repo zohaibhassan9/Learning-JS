@@ -1963,7 +1963,7 @@ newTree.height();
 
 
 ////////////////Summary of Rotations Needed/////////////////
-// Case	Condition	Rotation Needed
+// Case	Condition	                              Rotation Needed
 // LL	Inserted in left subtree of left child	 || Right Rotation
 // RR	Inserted in right subtree of right child || Left Rotation
 // LR	Inserted in right subtree of left child  ||	Left Rotation → Right Rotation
