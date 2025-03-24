@@ -1974,3 +1974,20 @@ newTree.height();
 //Right Rotation (on a node) makes its left child the new parent of that node.
 
 //Matering AVL Trees
+
+
+////////////////////////////////////////////////////////////////////////////////////
+////////////Red Black Tree ///////////////////////
+// Conceptual Transition: Key Differences
+
+// AVL Tree Balancing
+// AVL trees maintain a balance factor of -1, 0, or 1 (difference in height of left and right subtrees).
+// If the balance factor becomes >1 or <-1, rotations are performed.
+
+
+// RBT Balancing Rules
+// Red-Black Trees maintain balance with color properties instead of strict height balancing:
+// Every node is either Red or Black.
+// The root is always Black.
+// No two red nodes can be adjacent (a red node cannot have a red parent).
+// New nodes are always inserted as Red.
