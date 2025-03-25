@@ -1991,3 +1991,60 @@ newTree.height();
 // The root is always Black.
 // No two red nodes can be adjacent (a red node cannot have a red parent).
 // New nodes are always inserted as Red.
+
+
+Summary: Transitioning from AVL to RBT
+// AVL trees enforce strict balance, making them faster for search but slower for insertion/deletion.
+// RBTs allow some imbalance but improve performance for insertions and deletions.
+
+
+class RedBlackTree{
+
+constructor(){
+
+    this.root = null;
+}
+
+insert(nodeData){
+const newNode = new Node(nodeData)
+if(this.node === null){
+newNode.color = "BLACK";
+this.root = newNode
+}
+else{
+    let insertedNode = this.insertNode(this.root, newNode);
+    this.fixInsertion(insertedNode);
+}
+}
+
+insertNode(root, node){
+if(node.data < root.data){
+    if(root.left === null){
+root.left = node;
+node.parent = root;
+}
+
+else{
+    return this.insertNode(root.left, node)
+}
+}
+
+
+else {
+if(root.right === null){
+root.right = node;
+node.parent = root;
+}
+else{
+    return this.insertNode(root.right, node)
+}
+}
+
+return node;
+
+
+}
+
+
+
+}
