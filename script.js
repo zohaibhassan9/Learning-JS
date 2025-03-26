@@ -2099,3 +2099,31 @@ fixInsertion(node){
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 🔄 Understanding Rotations in Red-Black Trees
+// A rotation is a way to rearrange nodes in a binary tree to keep it balanced.
+// Left Rotation: When the right child takes the place of its parent.
+// Right Rotation: When the left child takes the place of its parent.
