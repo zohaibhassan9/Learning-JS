@@ -2039,11 +2039,62 @@ else{
     return this.insertNode(root.right, node)
 }
 }
-
 return node;
-
-
 }
+
+
+
+fixInsertion(node){
+    while(node.parent && node.parent.color === 'RED') {
+    let grandparent = node.parent.parent ;
+        if(node.parent === grandparent.left){
+    let uncle = grandparent.right;
+            if(uncle && uncle.color === 'RED'){
+    node.parent.color = 'BLACK'; 
+           uncle.color ='BLACK';
+                grandparent.color ='RED';
+                node = grandparent
+                
+    }
+            else{
+                if(node === node.parent.right){
+                    node = node.parent;
+                    this._rotateLeft(node)
+                }
+                node.parent.color = 'BLACK';
+                grandparent.color = 'RED';
+             this.rotateRight(grandparent)
+            }
+    
+            else{
+    
+                let uncle = grandparent.left;
+            if(uncle && uncle.color === 'RED'){
+    node.parent.color = 'Black';
+                grandparent.color = 'RED';
+                    uncle.color = 'BLACK';
+    
+                node = grandparent;
+                
+            }
+            else{
+                if(node === node.parent.left)
+                    node = node.parent 
+            this.rotateRight(node)        
+            }
+            node.parent.color = 'RED';
+            grandparent.color = 'BLACK';
+        this._rotateLeft(grandparent)    
+        }
+        }
+        
+    }
+    
+    this.root.color = 'BLACK';
+ }
+
+
+
 
 
 
