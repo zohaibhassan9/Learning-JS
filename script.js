@@ -2127,3 +2127,68 @@ fixInsertion(node){
 // A rotation is a way to rearrange nodes in a binary tree to keep it balanced.
 // Left Rotation: When the right child takes the place of its parent.
 // Right Rotation: When the left child takes the place of its parent.
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////// DELETE A NODE ///////// RED BALCK TREE ///////
+
+
+_deleteNode(node){
+    let originalColor = node.color;
+    let replacement;
+    
+    if(node.left === null){
+    replacement = node.right;
+    this.transplant(node, node.right)
+    }
+    else if(node.right === null){
+    replacement = node.left;
+    this.transplant(node, node.left)
+    }
+    else{
+    let successor = this.minimum(node.right);
+    orignaColor = successor.color;
+    replacement = successor.right
+    }
+    
+    if(successor.parent === node){
+    if(replacement) replacement.parent = successor;
+    }
+    else{
+    this.transplant(successor, successor.right);
+    successor.right = node.right;
+    if(successor.right) successor.right.parent = successor;
+    }
+    
+    this.transplant(node, successor);
+    successor.left = node.left;
+    if(successor.left) successor.left.parent = successor;
+    
+    successor.color = node.color;
+    }
+    
+    if(originalColor === BLACK) this.fixDeletion(replacement)
+    
+    }
+
+
+    transplant(u,v){
+    if(!u.parent){
+this.root= v;
+    }
+    else if(u === u.parent.left){}
+
+
+
+        u.parent = v.parent
+
+
+    }
