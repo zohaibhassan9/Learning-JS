@@ -2200,4 +2200,9 @@ if(v) v.parent = u.parent;
 // A algorithm is a step-by-step procedure for solving a problem or accomplishing a task.
 
 // what is the need for Algorithm
-// Algorithms are used to solve the complex computational tasks efficiently and effectively.
+// Algorithms are used to solve the complex computational problems efficiently and effectively.
+
+// Analysis of Algorithms
+//Analysis of Algorithms is a fundamental aspect of computer science that involves evaluating performance of algorithms and programs. 
+//Efficiency is measured in terms of time and space.
+
