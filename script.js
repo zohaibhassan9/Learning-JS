@@ -2197,4 +2197,7 @@ if(v) v.parent = u.parent;
 
 /////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////// Algorithm Defination ///////// Algorithms Topics & methods ///////
-A algorithm is a step-by-step procedure for solving a problem or accomplishing a task.
+// A algorithm is a step-by-step procedure for solving a problem or accomplishing a task.
+
+// what is the need for Algorithm
+// Algorithms are used to solve the complex computational tasks efficiently and effectively.
