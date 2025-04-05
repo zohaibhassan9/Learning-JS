@@ -2186,3 +2186,15 @@ u.parent.right = v;
 }
 if(v) v.parent = u.parent;
 }
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////// Algorithm Defination ///////// Algorithms Topics & methods ///////
+A algorithm is a step-by-step procedure for solving a problem or accomplishing a task.
