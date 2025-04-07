@@ -2275,3 +2275,22 @@ if(v) v.parent = u.parent;
 
 // So, when programmers talk about Big O, Omega, and Theta notation, they are just comparing superheroes'
 //  abilities to solve puzzles of different sizes!
+
+
+
+
+
+
+//////////////////////////////////////////// Mathematical Algorithm /////////////////////
+///////////What is a Mathematical Algorithm?////////////////////
+// Mathematical algorithms are used for analyzing and optimizing data structures and algorithms
+
+
+
+
+
+
+//////////////////////////////////////////// Bitwise Algorithm /////////////////////
+///////////What is a Bitwise Algorithm?////////////////////
+// Bitwise Algorithms are super fast, and widely used in low-level programming, 
+// optimization, and in encryption.
