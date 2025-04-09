@@ -2287,10 +2287,20 @@ if(v) v.parent = u.parent;
 
 
 
+// Topics
+// 🔁 Permutation:
+// In algorithms, permutation is about arranging items in different sequences.
+// For Example input 
+// [1, 2, 3], all permutations are:
+[1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], [3,2,1]
+
+
+
+
+
 
 
 
 //////////////////////////////////////////// Bitwise Algorithm /////////////////////
 ///////////What is a Bitwise Algorithm?////////////////////
-// Bitwise Algorithms are super fast, and widely used in low-level programming, 
-// optimization, and in encryption.
+// Bitwise Algorithms are super fast, and widely used in low-level programming, optimization, and in encryption.
