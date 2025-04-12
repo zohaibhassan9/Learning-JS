@@ -2298,6 +2298,21 @@ if(v) v.parent = u.parent;
 
 
 
+////////////////////////////////////////////Permutation aur Combination /////////////////////
+///////////What is Permutation aur Combination ?////////////////////
+
+// Permutation ka matlab hota hai kisi set ke elements ko ek specific order mein arrange karna. 
+// Jaise agar aapke paas 3 letters hain, A, B, aur C, to unhe alag-alag tareeqon se arrange karne 
+// ke kitne tareeqe ho sakte hain, woh permutation kehlata hai.
+
+// Combination ka matlab hota hai kisi set ke elements ko bina kisi specific order ke select karna. 
+// Jaise agar aapko 3 fruits mein se 2 fruits choose karne hain, to aap unhe kis tareeqe se
+//  choose kar sakte hain, woh combination kehlata hai.
+
+
+////////////////////////////////////////////..Arithmetic Progression../////////////////////
+///////////What is a Arithmetic Progression?////////////////////
+// An Arithmetic Progression (AP) is a sequence of numbers where the difference between any two consecutive numbers is always the same.
 
 
 
