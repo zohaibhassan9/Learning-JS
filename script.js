@@ -2318,10 +2318,33 @@ if(v) v.parent = u.parent;
 
 //////////////////////////////////////////// Bitwise Algorithm /////////////////////
 ///////////What is a Bitwise Algorithm?////////////////////
-
 // Bitwise algorithms are a set of tricks or techniques that manipulate bits directly 
 // using bitwise operators like &, |, ^, ~, <<, >>.
 
 // Bitwise Algorithms are super fast, and widely used in low-level programming, optimization, and in encryption.
 
+// In JavaScript, a number is stored as a 64-bit floating-point number but bitwise operations are performed 
+// on a 32-bit binary number. To perform a bit-operation, JavaScript converts the number into a 32-bit 
+// binary number (signed) and performs the operation and converts back the result to a 64-bit number.
 
+// Summary Table
+// Operation	Binary	Result	Decimal
+// 5 << 1	0101 << 1	1010	10
+// 3 << 2	0011 << 2	1100	12
+// 8 >> 1	1000 >> 1	0100	4
+// 10 >> 2	1010 >> 2	0010	2
+
+
+
+// Left Shift Operator ( << )       Multiply by them to '2'
+// Right Shift Operator ( >> )      Devided by them to '2'
+
+
+// Formula
+// a << n = a × (2ⁿ)
+Example
+// 4 << 1
+a = 4  
+n = 1
+
+// 4 × (2¹) = 4 × 2 = 8
