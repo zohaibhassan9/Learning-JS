@@ -2318,4 +2318,10 @@ if(v) v.parent = u.parent;
 
 //////////////////////////////////////////// Bitwise Algorithm /////////////////////
 ///////////What is a Bitwise Algorithm?////////////////////
+
+// Bitwise algorithms are a set of tricks or techniques that manipulate bits directly 
+// using bitwise operators like &, |, ^, ~, <<, >>.
+
 // Bitwise Algorithms are super fast, and widely used in low-level programming, optimization, and in encryption.
+
+
