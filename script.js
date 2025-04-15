@@ -2414,3 +2414,16 @@ function turnOffRightmostSetBit(n) {
 //////////////////////////////////////////// Check if a Number is a Power of 2 /////////////////////
 /////////// Number is a Power of 2////////////////////
 
+// A number is a power of two if it has only one 1 in binary.
+// Examples:
+// 1 = 0001 ✅
+// 2 = 0010 ✅
+// 4 = 0100 ✅
+// 3 = 0011 ❌
+
+// function isPowerOfTwo(n) {
+//     if (n <= 0) return false;
+//     return (n & (n - 1)) === 0;
+//   }
+//   console.log(isPowerOfTwo(4));
+//   console.log(isPowerOfTwo(6));
