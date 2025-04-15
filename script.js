@@ -2386,5 +2386,31 @@ AND:
 
 //////////////////////////////////////////// K-th Bit /////////////////////
 /////////// Set the K-th Bit ////////////////////
-// Now we will use 'OR' Oprator in this case, to set a K-th  bit
+// Now we will use 'OR' Oprator in this case, to set a K-th bit
+function setKthBit(n, k) {
+    return n | (1 << k);
+  }
+  console.log(setKthBit(5, 1)); 
+
+//////////////////////////////////////////// Turn Off the Rightmost Set Bit /////////////////////
+/////////// Turn Off the Rightmost Set Bit////////////////////
+// https://www.youtube.com/watch?v=Bw-qlAmmM3g
+// n(n-1)
+
+// if n = 12 
+// then n-1 = 12-1 > 11
+
+// If binary reresntation of 12 are 1100 and as same of 11 are 1011 then now we will perform & opration between them
+
+// 1100
+// &         >> 1000  (You can notice, the right most of 12 are become zero or turn offed (1 > 0)) 
+// 1011
+
+// code
+function turnOffRightmostSetBit(n) {
+    return n & (n - 1);}
+    console.log(turnOffRightmostSetBit(10));
+  
+//////////////////////////////////////////// Check if a Number is a Power of 2 /////////////////////
+/////////// Number is a Power of 2////////////////////
 
