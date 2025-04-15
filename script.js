@@ -2418,8 +2418,8 @@ function turnOffRightmostSetBit(n) {
 // Examples:
 // 1 = 0001 ✅
 // 2 = 0010 ✅
-// 4 = 0100 ✅
 // 3 = 0011 ❌
+// 4 = 0100 ✅
 
 // function isPowerOfTwo(n) {
 //     if (n <= 0) return false;
@@ -2427,3 +2427,15 @@ function turnOffRightmostSetBit(n) {
 //   }
 //   console.log(isPowerOfTwo(4));
 //   console.log(isPowerOfTwo(6));
+
+
+//////////////////////////////////////////// Check if a Number is Even or Odd /////////////////////
+/////////// Number is Even or Odd ////////////////////
+function isOdd(n) {
+    return (n & 1) === 1;
+  }
+// second method
+function isOdd(n) {
+    return n % 2 !== 0;
+  }
+  
