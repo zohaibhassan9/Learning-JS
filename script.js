@@ -2348,3 +2348,43 @@ a = 4
 n = 1
 
 // 4 × (2¹) = 4 × 2 = 8
+
+
+
+//////////////////////////////////////////// Binary  Representation /////////////////////
+///////////What is Binary  Representation?////////////////////
+// Turn a number into binary ('0' and '1' ki form m), the way computers stores numbers
+// Numbers are stores in programming in the form of binary and the position of this baianry numbers are called bits/
+
+function getBinary32Bit(n){
+return n.toString(2).padStart('32', 0)
+}
+console.log(getBinary32Bit(6));
+
+// .toString(2) → Converts number to base 2 (0 and 1 form) (binary)
+// .padStart(32, '0') → Makes it 32 bits by adding leading zeros
+
+
+
+//////////////////////////////////////////// K-th Bit /////////////////////
+///////////Check if K-th Bit is Set?////////////////////
+
+// https://youtu.be/ldhT2uVSdUQ?si=u3XDlHKdIAY1p-9U
+// https://youtu.be/z2jod_WVAk0?si=vwklwFIgnLfALrWD
+
+
+n     = 0101 (binary for 5)  
+// hum is ko compare kary gy 0001 k saath or agr k =1 hai tu shift kary gy 1 time then ye hu jt ga 0010
+// mask  = 0010 (binary for 1 << 1)
+AND:
+        0101
+      & 0010
+      ------
+        0000
+        (Not Set)
+
+
+//////////////////////////////////////////// K-th Bit /////////////////////
+/////////// Set the K-th Bit ////////////////////
+// Now we will use 'OR' Oprator in this case, to set a K-th  bit
+
