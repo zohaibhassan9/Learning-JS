@@ -2092,33 +2092,7 @@ fixInsertion(node){
     
     this.root.color = 'BLACK';
  }
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2418,8 +2392,8 @@ function turnOffRightmostSetBit(n) {
 // Examples:
 // 1 = 0001 ✅
 // 2 = 0010 ✅
-// 3 = 0011 ❌
 // 4 = 0100 ✅
+// 3 = 0011 ❌
 
 // function isPowerOfTwo(n) {
 //     if (n <= 0) return false;
@@ -2434,7 +2408,7 @@ function turnOffRightmostSetBit(n) {
 function isOdd(n) {
     return (n & 1) === 1;
   }
-// second method
+//   second method
 function isOdd(n) {
     return n % 2 !== 0;
   }
