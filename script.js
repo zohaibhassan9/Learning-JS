@@ -2347,7 +2347,7 @@ console.log(getBinary32Bit(6));
 // https://youtu.be/z2jod_WVAk0?si=vwklwFIgnLfALrWD
 
 
-n     = 0101 (binary for 5)  
+   n = 0101 (binary for 5)  
 // hum is ko compare kary gy 0001 k saath or agr k =1 hai tu shift kary gy 1 time then ye hu jt ga 0010
 // mask  = 0010 (binary for 1 << 1)
 AND:
