@@ -2508,3 +2508,35 @@ console.log('true');
 }
 else {console.log('false');
 }
+
+
+/////////////////// Using Bitwise Shift Operators /////////////////
+function isEven(n){
+if(n == (n>>1) <<1)
+retuen true;
+else 
+return false;
+}
+
+let  n = 11;
+if(isEven(n)){
+    console.log('true');    
+}
+else{
+    console.log('false');
+    
+}
+
+
+/////////////////// Multiplication Table /////////////////
+///////////////////Program to print multiplication table of a number///////////////////
+function getMultiplication(n){
+
+for(let i = 0; i <= 10; i++;){
+    console.log(n + "*" + i + " = " + n * 1);
+}
+}
+// Driver Code
+
+let n = 5;
+getMultiplication(n)
