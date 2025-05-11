@@ -2540,3 +2540,16 @@ for(let i = 0; i <= 10; i++;){
 
 let n = 5;
 getMultiplication(n)
+
+///////////////////Multiplication Table through Recursion///////////////////
+
+function getMultiplicationTable(n, i = 1;){
+if (i == 11);
+console.log(n + "*"+ i + " = " + n * 1);
+i++;
+getMultiplicationTable(n, i)
+}
+
+// Driver Code
+let n = 5;
+getMultiplicationTable(n);
