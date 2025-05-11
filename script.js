@@ -2413,3 +2413,98 @@ function isOdd(n) {
     return n % 2 !== 0;
   }
   
+
+
+
+
+
+
+
+
+
+
+
+  //////////////////////////////////////////
+  /////////////LOGIC BUILDING//////////////
+
+
+
+
+
+//   How to convert a number into a binary representation
+
+
+// method 1
+
+function toBinary(n){
+return n.toString(2)
+}
+console.log(toBinary(10));
+
+// method 2
+
+
+function getBinary(n, bits = 5){
+    return n.toString(2).padStart(bits, '0')
+   }
+   console.log(getBinary(10));
+
+
+// method 3
+function toBinary(n){
+return n.toString(2).padStart(32, '0')
+}
+console.log(toBinary(10));
+
+// method 4
+let num = 10;
+let getBinary = num.toString(2).padStart(32, '0')
+console.log(getBinary);
+
+// To convert a number into a binary form '0' and '1', then we devide it by a number '2', and it will going repectively.
+
+
+//////////////////////////////////////////// Check if a Number is Even or Odd Under Logic Building /////////////////////
+/////////// Number is Even ////////////////////
+function isEven(n){
+    return (n % 2 == 0)
+}
+// Driver Code
+let n = 102;
+ if(isEven(n)){
+    console.log("True") //true
+ }
+ else{console.log('false');
+ }
+/////////// Number is Odd ////////////////////
+function isOdd(n) {
+    return (n & 1) === 1;
+  }
+console.log(isOdd(11)); //true
+
+//   second method
+function isOdd(n) {
+    return n % 2 !== 0;
+  }
+  console.log(isOdd(13));
+  
+//////////////////////////////////// RANDOM FUNTION FOR BOTH CHECKING /////////////////////////////
+function isEven(n){
+
+    if((n % 1) === 0){
+       return true;
+    }
+    else{ 
+        return false;
+    
+    }
+}
+
+// Driver Code
+let n = 103;
+if(isEven(n)){
+console.log('true');
+    
+}
+else {console.log('false');
+}
