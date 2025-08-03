@@ -24,7 +24,10 @@ console.log(person);
 }
 // and if we called the concole outside the brackets or outside it block scope then we recived an references error.
 console.log(person);
-// Const> conctant can be used to declare a variables and we cannot re-assign their values (in below exaple)
+
+// ---------------------------------------------------------------------
+// ---------------------------------------------------------------------
+// Const conctant can be used to declare a variables and we cannot re-assign their values (in below exaple)
 const ammount = 30;    
 // const ammount  = 40;   invalid method because as we learn before that we could not re-asign the 'const' values, mean if we decalre a "ammount" variable and again if we declare a variable with same name then we recived a reference error
 // ---------------------------------------------------------------------
@@ -2476,7 +2479,7 @@ let n = 102;
  }
  else{console.log('false');
  }
-/////////// Number is Odd ////////////////////
+//////// Number is Odd ////////
 function isOdd(n) {
     return (n & 1) === 1;
   }
@@ -2487,8 +2490,8 @@ function isOdd(n) {
     return n % 2 !== 0;
   }
   console.log(isOdd(13));
-  
-//////////////////////////////////// RANDOM FUNTION FOR BOTH CHECKING /////////////////////////////
+
+///////// RANDOM FUNTION FOR BOTH CHECKING /////////
 function isEven(n){
 
     if((n % 1) === 0){
@@ -2510,7 +2513,7 @@ else {console.log('false');
 }
 
 
-/////////////////// Using Bitwise Shift Operators /////////////////
+/////// Using Bitwise Shift Operators ////////
 function isEven(n){
 if(n == (n>>1) <<1)
 retuen true;
@@ -2531,25 +2534,117 @@ else{
 /////////////////// Multiplication Table /////////////////
 ///////////////////Program to print multiplication table of a number///////////////////
 function getMultiplication(n){
-
-for(let i = 0; i <= 10; i++;){
-    console.log(n + "*" + i + " = " + n * 1);
+for(let i = 0; i <= 10; i++){
+console.log(n + "*" + i + " = " + n * 1);
 }
 }
 // Driver Code
-
-let n = 5;
+var n = 5;
 getMultiplication(n)
 
-///////////////////Multiplication Table through Recursion///////////////////
-
-function getMultiplicationTable(n, i = 1;){
+/////// Multiplication Table through Recursion //////////
+function getMultiplicationTable(n, i = 1){
 if (i == 11);
 console.log(n + "*"+ i + " = " + n * 1);
 i++;
 getMultiplicationTable(n, i)
 }
-
 // Driver Code
 let n = 5;
 getMultiplicationTable(n);
+
+
+/////////////////// Program to find sum of first n natural numbers /////////////////
+function getSumNaturalsNumbers(n){
+let sum = 0;
+for (let x = 1; x <= n; x++)
+sum = sum + x;
+return sum;
+}
+
+let n = 5;
+console.log(getSumNaturalsNumbers(n));
+
+// javascript Program to find the average
+// of sum of first n natural numbers
+
+function findSum(n){
+    return n * (n + 1/ 2)
+}
+
+const n = 5;
+console.log(findSum(n));n
+
+//efficient approach using  javascript to find the average
+// of sum of first n natural numbers
+
+function getSumNaturalsNumbers(n){
+if (n % 2 == 0)
+return (n / 2) * (n + 1)
+else 
+return ((n + 1) / 2 ) * n
+}
+// driver code
+const n = 10;
+console.log(getSumNaturalsNumbers(n));
+ 
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Each digit in binary represents a power of 2, starting from the right (least significant bit):
+
+// Binary: 1   1   0   0   1
+// Index:  4   3   2   1   0
+// Power: 2⁴ 2³ 2² 2¹ 2⁰
+// Multiply each bit by its power of 2:
+
+// markdown
+// Copy
+// Edit
+// 1 × 2⁴ = 16  
+// 1 × 2³ = 8  
+// 0 × 2² = 0  
+// 0 × 2¹ = 0  
+// 1 × 2⁰ = 1  
+// ------------------
+// Total     = 16 + 8 + 0 + 0 + 1 = 25
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+////////// Swap Two Numbers//////////////
+
+let a = 2, b = 3;
+console.log("a  = " + a + "b = " +b);
+
+// Now swap numbers between them
+let temp = a;
+a = b;
+b = temp;
+console.log("a = " + a + "b = " + b);
+
+/////////// The dice problem /////////////
+function diceProblem(n){
+let ans;
+if(n === 1){
+    ans = 6;
+    }
+    else if(n === 2){
+        ans = 5;
+    }
+    else if(n === 3){
+        ans = 4;
+    }
+    else if(n === 4){
+        ans = 5;
+    }
+    else {
+        ans = 1
+    }
+    return ans;
+}
+
+// driver code
+let  n = 3;
+console.log(diceProblem(n));
+
